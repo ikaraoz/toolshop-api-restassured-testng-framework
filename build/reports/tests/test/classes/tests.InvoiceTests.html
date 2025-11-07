@@ -1,0 +1,3302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.InvoiceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.InvoiceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; InvoiceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.841s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create_invoice_returns_201_or_200</td>
+<td class="success">0.554s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">list_invoices_first_page_ok</td>
+<td class="success">0.287s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request URI:	https://api.practicesoftwaretesting.com/carts
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.387570
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/carts
+Status Code: 201
+Response Body:
+{
+    &quot;id&quot;: &quot;01k9g5rrjck83rhwby7ns4b3v8&quot;
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.388608
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/carts
+Status Code: 201
+Response Body:
+{
+    &quot;id&quot;: &quot;01k9g5rrjck83rhwby7ns4b3v8&quot;
+}
+==================================================
+
+
+Request URI:	https://api.practicesoftwaretesting.com/users/login
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.612050
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{&quot;email&quot;:&quot;customer@practicesoftwaretesting.com&quot;,&quot;password&quot;:&quot;welcome01&quot;}
+Status Code: 200
+Response Body:
+{
+    &quot;access_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNTgsImV4cCI6MTc2MjU1MzU1OCwibmJmIjoxNzYyNTUzMjU4LCJqdGkiOiJZZTMzc1U4Z0JoWTBtNUNaIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.uKJUc-6JOJiVfPKVXt-CpQYxERtMA5SOwwXa7kxm9A4&quot;,
+    &quot;token_type&quot;: &quot;bearer&quot;,
+    &quot;expires_in&quot;: 300
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.613120
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{&quot;email&quot;:&quot;customer@practicesoftwaretesting.com&quot;,&quot;password&quot;:&quot;welcome01&quot;}
+Status Code: 200
+Response Body:
+{
+    &quot;access_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNTgsImV4cCI6MTc2MjU1MzU1OCwibmJmIjoxNzYyNTUzMjU4LCJqdGkiOiJZZTMzc1U4Z0JoWTBtNUNaIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.uKJUc-6JOJiVfPKVXt-CpQYxERtMA5SOwwXa7kxm9A4&quot;,
+    &quot;token_type&quot;: &quot;bearer&quot;,
+    &quot;expires_in&quot;: 300
+}
+==================================================
+
+
+Request URI:	https://api.practicesoftwaretesting.com/invoices
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.802273
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/invoices
+Request Body:
+{&quot;billing_street&quot;:&quot;123 Main St&quot;,&quot;billing_city&quot;:&quot;Testville&quot;,&quot;billing_state&quot;:&quot;CA&quot;,&quot;billing_country&quot;:&quot;US&quot;,&quot;billing_postal_code&quot;:&quot;90001&quot;,&quot;payment_method&quot;:&quot;bank-transfer&quot;,&quot;cart_id&quot;:&quot;01k9g5rrjck83rhwby7ns4b3v8&quot;,&quot;payment_details&quot;:{&quot;bank_name&quot;:&quot;BankX&quot;,&quot;account_name&quot;:&quot;John Dow&quot;,&quot;account_number&quot;:&quot;12345678&quot;}}
+Status Code: 201
+Response Body:
+{
+    &quot;billing_street&quot;: &quot;123 Main St&quot;,
+    &quot;billing_city&quot;: &quot;Testville&quot;,
+    &quot;billing_state&quot;: &quot;CA&quot;,
+    &quot;billing_country&quot;: &quot;US&quot;,
+    &quot;billing_postal_code&quot;: &quot;90001&quot;,
+    &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+    &quot;invoice_date&quot;: &quot;2025-11-07T22:07:38.960553Z&quot;,
+    &quot;invoice_number&quot;: &quot;INV-2025000006&quot;,
+    &quot;id&quot;: &quot;01k9g5rrynw9vh6y4qp54e90nk&quot;,
+    &quot;created_at&quot;: &quot;2025-11-07T22:07:38.000000Z&quot;,
+    &quot;subtotal&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;additional_discount_percentage&quot;: null,
+    &quot;additional_discount_amount&quot;: 0,
+    &quot;eco_discount_percentage&quot;: 0,
+    &quot;eco_discount_amount&quot;: 0
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:38.803692
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/invoices
+Request Body:
+{&quot;billing_street&quot;:&quot;123 Main St&quot;,&quot;billing_city&quot;:&quot;Testville&quot;,&quot;billing_state&quot;:&quot;CA&quot;,&quot;billing_country&quot;:&quot;US&quot;,&quot;billing_postal_code&quot;:&quot;90001&quot;,&quot;payment_method&quot;:&quot;bank-transfer&quot;,&quot;cart_id&quot;:&quot;01k9g5rrjck83rhwby7ns4b3v8&quot;,&quot;payment_details&quot;:{&quot;bank_name&quot;:&quot;BankX&quot;,&quot;account_name&quot;:&quot;John Dow&quot;,&quot;account_number&quot;:&quot;12345678&quot;}}
+Status Code: 201
+Response Body:
+{
+    &quot;billing_street&quot;: &quot;123 Main St&quot;,
+    &quot;billing_city&quot;: &quot;Testville&quot;,
+    &quot;billing_state&quot;: &quot;CA&quot;,
+    &quot;billing_country&quot;: &quot;US&quot;,
+    &quot;billing_postal_code&quot;: &quot;90001&quot;,
+    &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+    &quot;invoice_date&quot;: &quot;2025-11-07T22:07:38.960553Z&quot;,
+    &quot;invoice_number&quot;: &quot;INV-2025000006&quot;,
+    &quot;id&quot;: &quot;01k9g5rrynw9vh6y4qp54e90nk&quot;,
+    &quot;created_at&quot;: &quot;2025-11-07T22:07:38.000000Z&quot;,
+    &quot;subtotal&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;additional_discount_percentage&quot;: null,
+    &quot;additional_discount_amount&quot;: 0,
+    &quot;eco_discount_percentage&quot;: 0,
+    &quot;eco_discount_amount&quot;: 0
+}
+==================================================
+
+
+Request URI:	https://api.practicesoftwaretesting.com/invoices?page=1
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:39.039744
+Method: GET
+Request URI: https://api.practicesoftwaretesting.com/invoices?page=1
+Status Code: 200
+Response Body:
+{
+    &quot;current_page&quot;: 1,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;01k9g5rrynw9vh6y4qp54e90nk&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000006&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:07:38&quot;,
+            &quot;status&quot;: &quot;AWAITING_FULFILLMENT&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01k9g5qmawq6vym7kkf9pz31y9&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000005&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:07:01&quot;,
+            &quot;status&quot;: &quot;AWAITING_FULFILLMENT&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01k9g5hv3a9vpx22avs9qcgxf3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000004&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:03:51&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000037&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-01 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 855.58,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 38&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCV2VND1KVHD60RCFZ8T&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YEKYRSQVMKNVJPQPVV&quot;,
+                    &quot;unit_price&quot;: 22.96,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YEKYRSQVMKNVJPQPVV&quot;,
+                        &quot;name&quot;: &quot;Swiss Woodcarving Chisels&quot;,
+                        &quot;price&quot;: 22.96,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9X&quot;,
+                            &quot;by_name&quot;: &quot;Clay Banks&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@claybanks&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-wooden-handled-stainless-steel-fork-and-bread-knife-PHO_ilA8dGg&quot;,
+                            &quot;file_name&quot;: &quot;chisels03.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCV9CXBA9CMVA29ZZFD2&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCVH4336V7YYQ4R83E14&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                    &quot;unit_price&quot;: 10.07,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                        &quot;name&quot;: &quot;Measuring Tape&quot;,
+                        &quot;price&quot;: 10.07,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Z&quot;,
+                            &quot;by_name&quot;: &quot;Diana Polekhina&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@diana_pole&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-necklace-on-yellow-textile-iUfusOthmgQ&quot;,
+                            &quot;file_name&quot;: &quot;measure02.avif&quot;,
+                            &quot;title&quot;: &quot;Measuring Tape&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCVPENF9R8S9E3DBD160&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YDWVKNNABD0KJMYQYS&quot;,
+                    &quot;unit_price&quot;: 45.23,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YDWVKNNABD0KJMYQYS&quot;,
+                        &quot;name&quot;: &quot;Wood Carving Chisels&quot;,
+                        &quot;price&quot;: 45.23,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9W&quot;,
+                            &quot;by_name&quot;: &quot;Octavian Iordache&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@octavianiordache&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-wooden-wall-mounted-rack-FgP27oU8LWw&quot;,
+                            &quot;file_name&quot;: &quot;chisels02.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCW08Z01E7GQ9J0R766G&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                    &quot;unit_price&quot;: 66.54,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 24V&quot;,
+                        &quot;price&quot;: 66.54,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKX&quot;,
+                            &quot;by_name&quot;: &quot;NeONBRAND&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@neonbrand&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/CuDoRFyTkAQ&quot;,
+                            &quot;file_name&quot;: &quot;drill02.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6J3T1DZAT138BWT41CA&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000036&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-14 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 3.95,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 37&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCTKV2QH3Q90R9EBXZBA&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6J3T1DZAT138BWT41CA&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z48FD8FW3EQ8JDRVT7&quot;,
+                    &quot;unit_price&quot;: 3.95,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z48FD8FW3EQ8JDRVT7&quot;,
+                        &quot;name&quot;: &quot;Flat-Head Wood Screws&quot;,
+                        &quot;price&quot;: 3.95,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAA&quot;,
+                            &quot;by_name&quot;: &quot;Ben Lodge&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@benlodge123&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/stainless-steel-11-screw-e3Y7qB67aow&quot;,
+                            &quot;file_name&quot;: &quot;fasteners04.avif&quot;,
+                            &quot;title&quot;: &quot;Flat-Head Wood Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000035&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-14 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 131.91,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 36&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCSSK1QCQZ2FN9TW1YH5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z0MDZJWTGKSQP0EXNE&quot;,
+                    &quot;unit_price&quot;: 5.55,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z0MDZJWTGKSQP0EXNE&quot;,
+                        &quot;name&quot;: &quot;Nuts and bolts&quot;,
+                        &quot;price&quot;: 5.55,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA8&quot;,
+                            &quot;by_name&quot;: &quot;Edge2Edge Media&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@edge2edgemedia&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-metal-tools-qHhJkxare7A&quot;,
+                            &quot;file_name&quot;: &quot;fasteners02.avif&quot;,
+                            &quot;title&quot;: &quot;Nuts and bolts&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCSZPHVY3YHKG4YDZRH6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                    &quot;unit_price&quot;: 35.62,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                        &quot;name&quot;: &quot;Safety Helmet Face Shield&quot;,
+                        &quot;price&quot;: 35.62,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA3&quot;,
+                            &quot;by_name&quot;: &quot;Laurence Ziegler&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@laurenceziegler&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-helmet-that-is-on-top-of-a-pile-of-leaves-niKVn6qfYAs&quot;,
+                            &quot;file_name&quot;: &quot;goggles02.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Helmet Face Shield&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCT6VDV343E3EH23Q5VX&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                    &quot;unit_price&quot;: 4.65,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                        &quot;name&quot;: &quot;M4 Nuts&quot;,
+                        &quot;price&quot;: 4.65,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAB&quot;,
+                            &quot;by_name&quot;: &quot;Mika Baumeister&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@kommumikation&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-round-coins-c71yQepDEjo&quot;,
+                            &quot;file_name&quot;: &quot;fasteners05.avif&quot;,
+                            &quot;title&quot;: &quot;M4 Nuts&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000033&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-05 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 227.67,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 34&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQXRS2ZY3N8P9E0R82A&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XGMJHSGM13DDQKFP9Y&quot;,
+                    &quot;unit_price&quot;: 14.15,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XGMJHSGM13DDQKFP9Y&quot;,
+                        &quot;name&quot;: &quot;Combination Pliers&quot;,
+                        &quot;price&quot;: 14.15,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK6&quot;,
+                            &quot;by_name&quot;: &quot;Helinton Fantin&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@fantin&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/W8BNwvOvW4M&quot;,
+                            &quot;file_name&quot;: &quot;pliers01.avif&quot;,
+                            &quot;title&quot;: &quot;Combination pliers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCR6A4RM03BXSJYP0GGJ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YCH5D78FB4A5WYQK4H&quot;,
+                    &quot;unit_price&quot;: 12.96,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YCH5D78FB4A5WYQK4H&quot;,
+                        &quot;name&quot;: &quot;Chisels Set&quot;,
+                        &quot;price&quot;: 12.96,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9V&quot;,
+                            &quot;by_name&quot;: &quot;Collab Media&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@collab_media&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-couple-of-tools-that-are-on-a-table-JQZyN8WJPh0&quot;,
+                            &quot;file_name&quot;: &quot;chisels01.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCRMZE2JSJ76NQ0C7J1A&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YTSZK9A7MN3WYY3VM9&quot;,
+                    &quot;unit_price&quot;: 38.45,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YTSZK9A7MN3WYY3VM9&quot;,
+                        &quot;name&quot;: &quot;Super-thin Protection Gloves&quot;,
+                        &quot;price&quot;: 38.45,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA5&quot;,
+                            &quot;by_name&quot;: &quot;Gabriel Alenius&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@gabrielalenius&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-person-wearing-a-yellow-jacket-and-black-gloves-dA-oPHeQZkA&quot;,
+                            &quot;file_name&quot;: &quot;gloves02.avif&quot;,
+                            &quot;title&quot;: &quot;Super-thin Protection Gloves&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCRS5ME41GEYP5X85FXZ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z7VGSZN37MC8YFNV1P&quot;,
+                    &quot;unit_price&quot;: 3.55,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z7VGSZN37MC8YFNV1P&quot;,
+                        &quot;name&quot;: &quot;Washers&quot;,
+                        &quot;price&quot;: 3.55,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAC&quot;,
+                            &quot;by_name&quot;: &quot;Robert Ruggiero&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@robert2301&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-pile-of-different-colored-washers-sitting-on-top-of-a-table-oY6774he6GQ&quot;,
+                            &quot;file_name&quot;: &quot;fasteners06.avif&quot;,
+                            &quot;title&quot;: &quot;Washers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCS18H7TK04QC9SM33NH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                    &quot;unit_price&quot;: 46.5,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 12V&quot;,
+                        &quot;price&quot;: 46.5,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Q&quot;,
+                            &quot;by_name&quot;: &quot;Manik Roy&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@pixnum&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/_UGTrlvki_A&quot;,
+                            &quot;file_name&quot;: &quot;drill04.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HCWAY9FGJ5VFDQYTMM&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000032&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-29 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 22.96,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 33&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQG5F6NGV894Q03EEKP&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HCWAY9FGJ5VFDQYTMM&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                    &quot;unit_price&quot;: 11.48,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer&quot;,
+                        &quot;price&quot;: 11.48,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKD&quot;,
+                            &quot;by_name&quot;: &quot;Andrew George&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@andrewjoegeorge&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/YU2mCvXR0wA&quot;,
+                            &quot;file_name&quot;: &quot;hammer03.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000031&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-20 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 39.42,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 32&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPXW3JY3BAZ28N2YQ8Q&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y7NNTX84CEGC9WMXQA&quot;,
+                    &quot;unit_price&quot;: 14.14,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y7NNTX84CEGC9WMXQA&quot;,
+                        &quot;name&quot;: &quot;Angled Spanner&quot;,
+                        &quot;price&quot;: 14.14,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKM&quot;,
+                            &quot;by_name&quot;: &quot;Tekton&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@tekton_tools&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/9z7t48S5C_g&quot;,
+                            &quot;file_name&quot;: &quot;wrench02.avif&quot;,
+                            &quot;title&quot;: &quot;Wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQ3GPZ9FT4F4ND1Z7WQ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y04M1ZVPVDFPGQAYNM&quot;,
+                    &quot;unit_price&quot;: 11.14,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y04M1ZVPVDFPGQAYNM&quot;,
+                        &quot;name&quot;: &quot;Thor Hammer&quot;,
+                        &quot;price&quot;: 11.14,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKE&quot;,
+                            &quot;by_name&quot;: &quot;ANIRUDH&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@lanirudhreddy&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/3esjG-nlgyk&quot;,
+                            &quot;file_name&quot;: &quot;hammer04.avif&quot;,
+                            &quot;title&quot;: &quot;Hammer&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000030&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-16 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 113.73,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 31&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCNKZWVYKMNQTGJWAZ0T&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YVF27B3G920003PWNH&quot;,
+                    &quot;unit_price&quot;: 41.29,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YVF27B3G920003PWNH&quot;,
+                        &quot;name&quot;: &quot;Construction Helmet&quot;,
+                        &quot;price&quot;: 41.29,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA6&quot;,
+                            &quot;by_name&quot;: &quot;Ümit Yıldırım&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@umityildirim&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/red-hard-hat-on-pavement-9OB46apMbC4&quot;,
+                            &quot;file_name&quot;: &quot;helmet01.avif&quot;,
+                            &quot;title&quot;: &quot;Construction Helmet&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCNWPEFWF0Z963FC0P74&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                    &quot;unit_price&quot;: 20.33,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                        &quot;name&quot;: &quot;Adjustable Wrench&quot;,
+                        &quot;price&quot;: 20.33,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKK&quot;,
+                            &quot;by_name&quot;: &quot;Recha Oktaviani&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@rechaoktaviani&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/t__61ap00Mc&quot;,
+                            &quot;file_name&quot;: &quot;wrench01.avif&quot;,
+                            &quot;title&quot;: &quot;Adjustable wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCP5HZCDFB2VBMD0911S&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                    &quot;unit_price&quot;: 7.23,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 7.5m&quot;,
+                        &quot;price&quot;: 7.23,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Y&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/blue-and-yellow-measuring-tape-faOPbPmznfQ&quot;,
+                            &quot;file_name&quot;: &quot;measure01.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 7.5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPBBV09D4NP63FCHS2P&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XV5KZSJVF4DQMCDBB2&quot;,
+                    &quot;unit_price&quot;: 13.41,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XV5KZSJVF4DQMCDBB2&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer with Shock Reduction Grip&quot;,
+                        &quot;price&quot;: 13.41,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKB&quot;,
+                            &quot;by_name&quot;: &quot;iMattSmart&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@imattsmart&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/jaLaLQdkBOE&quot;,
+                            &quot;file_name&quot;: &quot;hammer01.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPJC2Y92PFHX31KXX8H&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                    &quot;unit_price&quot;: 4.65,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                        &quot;name&quot;: &quot;M4 Nuts&quot;,
+                        &quot;price&quot;: 4.65,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAB&quot;,
+                            &quot;by_name&quot;: &quot;Mika Baumeister&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@kommumikation&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-round-coins-c71yQepDEjo&quot;,
+                            &quot;file_name&quot;: &quot;fasteners05.avif&quot;,
+                            &quot;title&quot;: &quot;M4 Nuts&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000028&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-02 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 886.43,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 29&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKAFP5F88XFVJWA1160&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YNNN63MKN8Q1BTF2AT&quot;,
+                    &quot;unit_price&quot;: 24.26,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YNNN63MKN8Q1BTF2AT&quot;,
+                        &quot;name&quot;: &quot;Safety Goggles&quot;,
+                        &quot;price&quot;: 24.26,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA2&quot;,
+                            &quot;by_name&quot;: &quot;wilson montoya&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@dogblack22&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/black-framed-sunglasses-with-yellow-lens-Cf_d_nDtOcM&quot;,
+                            &quot;file_name&quot;: &quot;goggles01.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Goggles&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKGGA1FQJE3WFF7HV36&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKNHZFDR0HT72XSVCXH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                    &quot;unit_price&quot;: 20.33,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                        &quot;name&quot;: &quot;Adjustable Wrench&quot;,
+                        &quot;price&quot;: 20.33,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKK&quot;,
+                            &quot;by_name&quot;: &quot;Recha Oktaviani&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@rechaoktaviani&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/t__61ap00Mc&quot;,
+                            &quot;file_name&quot;: &quot;wrench01.avif&quot;,
+                            &quot;title&quot;: &quot;Adjustable wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKW2KRQVCJWKYAYE50E&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                    &quot;unit_price&quot;: 11.48,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer&quot;,
+                        &quot;price&quot;: 11.48,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKD&quot;,
+                            &quot;by_name&quot;: &quot;Andrew George&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@andrewjoegeorge&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/YU2mCvXR0wA&quot;,
+                            &quot;file_name&quot;: &quot;hammer03.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCM1T5GF1EHX1V3M434B&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                    &quot;unit_price&quot;: 10.07,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                        &quot;name&quot;: &quot;Measuring Tape&quot;,
+                        &quot;price&quot;: 10.07,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Z&quot;,
+                            &quot;by_name&quot;: &quot;Diana Polekhina&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@diana_pole&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-necklace-on-yellow-textile-iUfusOthmgQ&quot;,
+                            &quot;file_name&quot;: &quot;measure02.avif&quot;,
+                            &quot;title&quot;: &quot;Measuring Tape&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCMCP3X8HXQYNABWYY33&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZM18WV2TWXJSF62C3M&quot;,
+                    &quot;unit_price&quot;: 73.59,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZM18WV2TWXJSF62C3M&quot;,
+                        &quot;name&quot;: &quot;Belt Sander&quot;,
+                        &quot;price&quot;: 73.59,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKS&quot;,
+                            &quot;by_name&quot;: &quot;Luther.M.E. Bottrill&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@luthermeb&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/7kHN1-9dD_4&quot;,
+                            &quot;file_name&quot;: &quot;sander02.avif&quot;,
+                            &quot;title&quot;: &quot;Belt sander&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000027&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-24 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 314.87,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 28&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJPDMFDJZ430HBQ0BAZ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                    &quot;unit_price&quot;: 100.79,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                        &quot;name&quot;: &quot;Random Orbit Sander&quot;,
+                        &quot;price&quot;: 100.79,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKV&quot;,
+                            &quot;by_name&quot;: &quot;Adi Goldstein&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@adigold1&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/aO4c6o4H2MI&quot;,
+                            &quot;file_name&quot;: &quot;sander03.avif&quot;,
+                            &quot;title&quot;: &quot;Random orbit sander&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJZQ5XBHC5NH2EHAAHH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                    &quot;unit_price&quot;: 6.25,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                        &quot;name&quot;: &quot;Screws&quot;,
+                        &quot;price&quot;: 6.25,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA7&quot;,
+                            &quot;by_name&quot;: &quot;Eliza Diamond&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@eliza28diamonds&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/gray-screw-bolt-lot-pvm5QvjFrJ8&quot;,
+                            &quot;file_name&quot;: &quot;fasteners01.avif&quot;,
+                            &quot;title&quot;: &quot;Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000026&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-10 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 550.92,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 27&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHC887QTV8JHZCDY9ME&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZARYGEGBKR1FT14V8Y&quot;,
+                    &quot;unit_price&quot;: 86.71,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZARYGEGBKR1FT14V8Y&quot;,
+                        &quot;name&quot;: &quot;Tool Cabinet&quot;,
+                        &quot;price&quot;: 86.71,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAF&quot;,
+                            &quot;by_name&quot;: &quot;Georg Eiermann&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@georgeiermann&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-group-of-wooden-objects-uXWbowHdJqk&quot;,
+                            &quot;file_name&quot;: &quot;toolcabinet01.avif&quot;,
+                            &quot;title&quot;: &quot;Tool Cabinet&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHJEHH15NWKWRVGRWE1&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y3M94RVQDWDGS28RM9&quot;,
+                    &quot;unit_price&quot;: 18.63,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y3M94RVQDWDGS28RM9&quot;,
+                        &quot;name&quot;: &quot;Court Hammer&quot;,
+                        &quot;price&quot;: 18.63,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKH&quot;,
+                            &quot;by_name&quot;: &quot;Wesley Tingey&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@wesleyphotography&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/9z9fxr_7Z-k&quot;,
+                            &quot;file_name&quot;: &quot;hammer07.avif&quot;,
+                            &quot;title&quot;: &quot;Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHS22HCJ0BN7C5DC9MY&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YM9SX7N7P86DT88QH4&quot;,
+                    &quot;unit_price&quot;: 15.75,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YM9SX7N7P86DT88QH4&quot;,
+                        &quot;name&quot;: &quot;Square Ruler&quot;,
+                        &quot;price&quot;: 15.75,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA1&quot;,
+                            &quot;by_name&quot;: &quot;Markus Spiske&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@markusspiske&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-ruler-with-stand-pwpVGQ-A5qI&quot;,
+                            &quot;file_name&quot;: &quot;measure04.avif&quot;,
+                            &quot;title&quot;: &quot;Square Ruler&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHZJ47DWYTF1SFBQXF6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZG65DFVGSYKNF5N41F&quot;,
+                    &quot;unit_price&quot;: 61.16,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZG65DFVGSYKNF5N41F&quot;,
+                        &quot;name&quot;: &quot;Leather toolbelt&quot;,
+                        &quot;price&quot;: 61.16,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAJ&quot;,
+                            &quot;by_name&quot;: &quot;jesse orrico&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@jessedo81&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-handled-hammer-and-with-tool-belt-L94dWXNKwrY&quot;,
+                            &quot;file_name&quot;: &quot;toolbelt01.avif&quot;,
+                            &quot;title&quot;: &quot;Leather toolbelt&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJ519AW29PD5N30A42K&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                    &quot;unit_price&quot;: 7.23,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 7.5m&quot;,
+                        &quot;price&quot;: 7.23,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Y&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/blue-and-yellow-measuring-tape-faOPbPmznfQ&quot;,
+                            &quot;file_name&quot;: &quot;measure01.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 7.5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJB5FW6FSDE25ZPWRQ5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XR2TBMX5BGFM97ENBV&quot;,
+                    &quot;unit_price&quot;: 14.24,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XR2TBMX5BGFM97ENBV&quot;,
+                        &quot;name&quot;: &quot;Long Nose Pliers&quot;,
+                        &quot;price&quot;: 14.24,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK9&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/GamuDTVm02g&quot;,
+                            &quot;file_name&quot;: &quot;pliers04.avif&quot;,
+                            &quot;title&quot;: &quot;Long nose pliers&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000025&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-05 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 1258.31,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 26&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCFYTJ9PTND9MHYZAMAW&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                    &quot;unit_price&quot;: 46.5,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 12V&quot;,
+                        &quot;price&quot;: 46.5,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Q&quot;,
+                            &quot;by_name&quot;: &quot;Manik Roy&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@pixnum&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/_UGTrlvki_A&quot;,
+                            &quot;file_name&quot;: &quot;drill04.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCG71D6GZVHH84PQWVN6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YWR8PXH12D0477ENQB&quot;,
+                    &quot;unit_price&quot;: 18.58,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YWR8PXH12D0477ENQB&quot;,
+                        &quot;name&quot;: &quot;Ear Protection&quot;,
+                        &quot;price&quot;: 18.58,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAD&quot;,
+                            &quot;by_name&quot;: &quot;cetteup&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@cetteup&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/black-and-red-3m-earmuffs-beside-miter-saw-IC5sX-7PRN8&quot;,
+                            &quot;file_name&quot;: &quot;earprotection01.avif&quot;,
+                            &quot;title&quot;: &quot;Ear Protection&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGE3MBEB5TW0WRDMXMW&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGMGV06245G6QX08D88&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                    &quot;unit_price&quot;: 100.79,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                        &quot;name&quot;: &quot;Random Orbit Sander&quot;,
+                        &quot;price&quot;: 100.79,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKV&quot;,
+                            &quot;by_name&quot;: &quot;Adi Goldstein&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@adigold1&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/aO4c6o4H2MI&quot;,
+                            &quot;file_name&quot;: &quot;sander03.avif&quot;,
+                            &quot;title&quot;: &quot;Random orbit sander&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGXPTZSGPEB2JBXE0B5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                    &quot;unit_price&quot;: 35.62,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                        &quot;name&quot;: &quot;Safety Helmet Face Shield&quot;,
+                        &quot;price&quot;: 35.62,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA3&quot;,
+                            &quot;by_name&quot;: &quot;Laurence Ziegler&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@laurenceziegler&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-helmet-that-is-on-top-of-a-pile-of-leaves-niKVn6qfYAs&quot;,
+                            &quot;file_name&quot;: &quot;goggles02.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Helmet Face Shield&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCH3PVVZY276TJYMNZZ1&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZWGJ3JXNN8B185CB13&quot;,
+                    &quot;unit_price&quot;: 119.24,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZWGJ3JXNN8B185CB13&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 18V&quot;,
+                        &quot;price&quot;: 119.24,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9P&quot;,
+                            &quot;by_name&quot;: &quot;Jonathan Cooper&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@theshuttervision&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/7sZwThSntdw&quot;,
+                            &quot;file_name&quot;: &quot;drill03.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill 18V&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000023&quot;,
+            &quot;invoice_date&quot;: &quot;2025-07-10 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 281.13,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 24&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCD82CHJAXH15SD8PBW2&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                    &quot;unit_price&quot;: 66.54,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 24V&quot;,
+                        &quot;price&quot;: 66.54,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKX&quot;,
+                            &quot;by_name&quot;: &quot;NeONBRAND&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@neonbrand&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/CuDoRFyTkAQ&quot;,
+                            &quot;file_name&quot;: &quot;drill02.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCDG8GD85R9CQHX4YJW5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XNC9PJ8AT73E2YWME6&quot;,
+                    &quot;unit_price&quot;: 48.41,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XNC9PJ8AT73E2YWME6&quot;,
+                        &quot;name&quot;: &quot;Bolt Cutters&quot;,
+                        &quot;price&quot;: 48.41,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK8&quot;,
+                            &quot;by_name&quot;: &quot;Michael Dziedzic&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@lazycreekimages&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/pM9pkc9J918&quot;,
+                            &quot;file_name&quot;: &quot;pliers03.avif&quot;,
+                            &quot;title&quot;: &quot;Bolt cutters&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCDTBA3ECVGBWP32F0MR&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YJE18TP05Q0VPA791W&quot;,
+                    &quot;unit_price&quot;: 12.91,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YJE18TP05Q0VPA791W&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 5m&quot;,
+                        &quot;price&quot;: 12.91,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA0&quot;,
+                            &quot;by_name&quot;: &quot;Immo Wegmann&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@macroman&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/yellow-and-black-measuring-tape-1abCQ_3g_UY&quot;,
+                            &quot;file_name&quot;: &quot;measure03.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCE8FBKBZGWE308STW8S&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                    &quot;unit_price&quot;: 6.25,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                        &quot;name&quot;: &quot;Screws&quot;,
+                        &quot;price&quot;: 6.25,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA7&quot;,
+                            &quot;by_name&quot;: &quot;Eliza Diamond&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@eliza28diamonds&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/gray-screw-bolt-lot-pvm5QvjFrJ8&quot;,
+                            &quot;file_name&quot;: &quot;fasteners01.avif&quot;,
+                            &quot;title&quot;: &quot;Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        }
+    ],
+    &quot;from&quot;: 1,
+    &quot;last_page&quot;: 11,
+    &quot;per_page&quot;: 15,
+    &quot;to&quot;: 15,
+    &quot;total&quot;: 164
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:39.065662
+Method: GET
+Request URI: https://api.practicesoftwaretesting.com/invoices?page=1
+Status Code: 200
+Response Body:
+{
+    &quot;current_page&quot;: 1,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: &quot;01k9g5rrynw9vh6y4qp54e90nk&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000006&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:07:38&quot;,
+            &quot;status&quot;: &quot;AWAITING_FULFILLMENT&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01k9g5qmawq6vym7kkf9pz31y9&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000005&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:07:01&quot;,
+            &quot;status&quot;: &quot;AWAITING_FULFILLMENT&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01k9g5hv3a9vpx22avs9qcgxf3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-2025000004&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-07 22:03:51&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 0,
+            &quot;subtotal&quot;: 0,
+            &quot;billing_street&quot;: &quot;123 Main St&quot;,
+            &quot;billing_city&quot;: &quot;Testville&quot;,
+            &quot;billing_state&quot;: &quot;CA&quot;,
+            &quot;billing_country&quot;: &quot;US&quot;,
+            &quot;billing_postal_code&quot;: &quot;90001&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: 0,
+            &quot;invoicelines&quot;: [
+                
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000037&quot;,
+            &quot;invoice_date&quot;: &quot;2025-11-01 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 855.58,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 38&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCV2VND1KVHD60RCFZ8T&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YEKYRSQVMKNVJPQPVV&quot;,
+                    &quot;unit_price&quot;: 22.96,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YEKYRSQVMKNVJPQPVV&quot;,
+                        &quot;name&quot;: &quot;Swiss Woodcarving Chisels&quot;,
+                        &quot;price&quot;: 22.96,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9X&quot;,
+                            &quot;by_name&quot;: &quot;Clay Banks&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@claybanks&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-wooden-handled-stainless-steel-fork-and-bread-knife-PHO_ilA8dGg&quot;,
+                            &quot;file_name&quot;: &quot;chisels03.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCV9CXBA9CMVA29ZZFD2&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCVH4336V7YYQ4R83E14&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                    &quot;unit_price&quot;: 10.07,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                        &quot;name&quot;: &quot;Measuring Tape&quot;,
+                        &quot;price&quot;: 10.07,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Z&quot;,
+                            &quot;by_name&quot;: &quot;Diana Polekhina&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@diana_pole&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-necklace-on-yellow-textile-iUfusOthmgQ&quot;,
+                            &quot;file_name&quot;: &quot;measure02.avif&quot;,
+                            &quot;title&quot;: &quot;Measuring Tape&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCVPENF9R8S9E3DBD160&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YDWVKNNABD0KJMYQYS&quot;,
+                    &quot;unit_price&quot;: 45.23,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YDWVKNNABD0KJMYQYS&quot;,
+                        &quot;name&quot;: &quot;Wood Carving Chisels&quot;,
+                        &quot;price&quot;: 45.23,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9W&quot;,
+                            &quot;by_name&quot;: &quot;Octavian Iordache&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@octavianiordache&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-wooden-wall-mounted-rack-FgP27oU8LWw&quot;,
+                            &quot;file_name&quot;: &quot;chisels02.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCW08Z01E7GQ9J0R766G&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6JEWNAPCHQW38VVMFFW&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                    &quot;unit_price&quot;: 66.54,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 24V&quot;,
+                        &quot;price&quot;: 66.54,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKX&quot;,
+                            &quot;by_name&quot;: &quot;NeONBRAND&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@neonbrand&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/CuDoRFyTkAQ&quot;,
+                            &quot;file_name&quot;: &quot;drill02.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6J3T1DZAT138BWT41CA&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000036&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-14 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 3.95,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 37&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCTKV2QH3Q90R9EBXZBA&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6J3T1DZAT138BWT41CA&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z48FD8FW3EQ8JDRVT7&quot;,
+                    &quot;unit_price&quot;: 3.95,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z48FD8FW3EQ8JDRVT7&quot;,
+                        &quot;name&quot;: &quot;Flat-Head Wood Screws&quot;,
+                        &quot;price&quot;: 3.95,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAA&quot;,
+                            &quot;by_name&quot;: &quot;Ben Lodge&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@benlodge123&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/stainless-steel-11-screw-e3Y7qB67aow&quot;,
+                            &quot;file_name&quot;: &quot;fasteners04.avif&quot;,
+                            &quot;title&quot;: &quot;Flat-Head Wood Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000035&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-14 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 131.91,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 36&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCSSK1QCQZ2FN9TW1YH5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z0MDZJWTGKSQP0EXNE&quot;,
+                    &quot;unit_price&quot;: 5.55,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z0MDZJWTGKSQP0EXNE&quot;,
+                        &quot;name&quot;: &quot;Nuts and bolts&quot;,
+                        &quot;price&quot;: 5.55,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA8&quot;,
+                            &quot;by_name&quot;: &quot;Edge2Edge Media&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@edge2edgemedia&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-metal-tools-qHhJkxare7A&quot;,
+                            &quot;file_name&quot;: &quot;fasteners02.avif&quot;,
+                            &quot;title&quot;: &quot;Nuts and bolts&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCSZPHVY3YHKG4YDZRH6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                    &quot;unit_price&quot;: 35.62,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                        &quot;name&quot;: &quot;Safety Helmet Face Shield&quot;,
+                        &quot;price&quot;: 35.62,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA3&quot;,
+                            &quot;by_name&quot;: &quot;Laurence Ziegler&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@laurenceziegler&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-helmet-that-is-on-top-of-a-pile-of-leaves-niKVn6qfYAs&quot;,
+                            &quot;file_name&quot;: &quot;goggles02.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Helmet Face Shield&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCT6VDV343E3EH23Q5VX&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HXF934FPJCNXC96GS9&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                    &quot;unit_price&quot;: 4.65,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                        &quot;name&quot;: &quot;M4 Nuts&quot;,
+                        &quot;price&quot;: 4.65,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAB&quot;,
+                            &quot;by_name&quot;: &quot;Mika Baumeister&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@kommumikation&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-round-coins-c71yQepDEjo&quot;,
+                            &quot;file_name&quot;: &quot;fasteners05.avif&quot;,
+                            &quot;title&quot;: &quot;M4 Nuts&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000033&quot;,
+            &quot;invoice_date&quot;: &quot;2025-10-05 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 227.67,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 34&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQXRS2ZY3N8P9E0R82A&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XGMJHSGM13DDQKFP9Y&quot;,
+                    &quot;unit_price&quot;: 14.15,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XGMJHSGM13DDQKFP9Y&quot;,
+                        &quot;name&quot;: &quot;Combination Pliers&quot;,
+                        &quot;price&quot;: 14.15,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK6&quot;,
+                            &quot;by_name&quot;: &quot;Helinton Fantin&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@fantin&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/W8BNwvOvW4M&quot;,
+                            &quot;file_name&quot;: &quot;pliers01.avif&quot;,
+                            &quot;title&quot;: &quot;Combination pliers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCR6A4RM03BXSJYP0GGJ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YCH5D78FB4A5WYQK4H&quot;,
+                    &quot;unit_price&quot;: 12.96,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YCH5D78FB4A5WYQK4H&quot;,
+                        &quot;name&quot;: &quot;Chisels Set&quot;,
+                        &quot;price&quot;: 12.96,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9V&quot;,
+                            &quot;by_name&quot;: &quot;Collab Media&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@collab_media&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-couple-of-tools-that-are-on-a-table-JQZyN8WJPh0&quot;,
+                            &quot;file_name&quot;: &quot;chisels01.avif&quot;,
+                            &quot;title&quot;: &quot;Chisel&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCRMZE2JSJ76NQ0C7J1A&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YTSZK9A7MN3WYY3VM9&quot;,
+                    &quot;unit_price&quot;: 38.45,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YTSZK9A7MN3WYY3VM9&quot;,
+                        &quot;name&quot;: &quot;Super-thin Protection Gloves&quot;,
+                        &quot;price&quot;: 38.45,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA5&quot;,
+                            &quot;by_name&quot;: &quot;Gabriel Alenius&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@gabrielalenius&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-person-wearing-a-yellow-jacket-and-black-gloves-dA-oPHeQZkA&quot;,
+                            &quot;file_name&quot;: &quot;gloves02.avif&quot;,
+                            &quot;title&quot;: &quot;Super-thin Protection Gloves&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCRS5ME41GEYP5X85FXZ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z7VGSZN37MC8YFNV1P&quot;,
+                    &quot;unit_price&quot;: 3.55,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z7VGSZN37MC8YFNV1P&quot;,
+                        &quot;name&quot;: &quot;Washers&quot;,
+                        &quot;price&quot;: 3.55,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAC&quot;,
+                            &quot;by_name&quot;: &quot;Robert Ruggiero&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@robert2301&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-pile-of-different-colored-washers-sitting-on-top-of-a-table-oY6774he6GQ&quot;,
+                            &quot;file_name&quot;: &quot;fasteners06.avif&quot;,
+                            &quot;title&quot;: &quot;Washers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCS18H7TK04QC9SM33NH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HH00EZYYJ1R46NXW2B&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                    &quot;unit_price&quot;: 46.5,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 12V&quot;,
+                        &quot;price&quot;: 46.5,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Q&quot;,
+                            &quot;by_name&quot;: &quot;Manik Roy&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@pixnum&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/_UGTrlvki_A&quot;,
+                            &quot;file_name&quot;: &quot;drill04.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6HCWAY9FGJ5VFDQYTMM&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000032&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-29 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 22.96,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 33&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQG5F6NGV894Q03EEKP&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6HCWAY9FGJ5VFDQYTMM&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                    &quot;unit_price&quot;: 11.48,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer&quot;,
+                        &quot;price&quot;: 11.48,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKD&quot;,
+                            &quot;by_name&quot;: &quot;Andrew George&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@andrewjoegeorge&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/YU2mCvXR0wA&quot;,
+                            &quot;file_name&quot;: &quot;hammer03.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000031&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-20 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 39.42,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 32&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPXW3JY3BAZ28N2YQ8Q&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y7NNTX84CEGC9WMXQA&quot;,
+                    &quot;unit_price&quot;: 14.14,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y7NNTX84CEGC9WMXQA&quot;,
+                        &quot;name&quot;: &quot;Angled Spanner&quot;,
+                        &quot;price&quot;: 14.14,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKM&quot;,
+                            &quot;by_name&quot;: &quot;Tekton&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@tekton_tools&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/9z7t48S5C_g&quot;,
+                            &quot;file_name&quot;: &quot;wrench02.avif&quot;,
+                            &quot;title&quot;: &quot;Wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCQ3GPZ9FT4F4ND1Z7WQ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H6DF4G3YVWNJ6FYE5E&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y04M1ZVPVDFPGQAYNM&quot;,
+                    &quot;unit_price&quot;: 11.14,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y04M1ZVPVDFPGQAYNM&quot;,
+                        &quot;name&quot;: &quot;Thor Hammer&quot;,
+                        &quot;price&quot;: 11.14,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKE&quot;,
+                            &quot;by_name&quot;: &quot;ANIRUDH&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@lanirudhreddy&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/3esjG-nlgyk&quot;,
+                            &quot;file_name&quot;: &quot;hammer04.avif&quot;,
+                            &quot;title&quot;: &quot;Hammer&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000030&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-16 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 113.73,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 31&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCNKZWVYKMNQTGJWAZ0T&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YVF27B3G920003PWNH&quot;,
+                    &quot;unit_price&quot;: 41.29,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YVF27B3G920003PWNH&quot;,
+                        &quot;name&quot;: &quot;Construction Helmet&quot;,
+                        &quot;price&quot;: 41.29,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA6&quot;,
+                            &quot;by_name&quot;: &quot;Ümit Yıldırım&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@umityildirim&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/red-hard-hat-on-pavement-9OB46apMbC4&quot;,
+                            &quot;file_name&quot;: &quot;helmet01.avif&quot;,
+                            &quot;title&quot;: &quot;Construction Helmet&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCNWPEFWF0Z963FC0P74&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                    &quot;unit_price&quot;: 20.33,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                        &quot;name&quot;: &quot;Adjustable Wrench&quot;,
+                        &quot;price&quot;: 20.33,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKK&quot;,
+                            &quot;by_name&quot;: &quot;Recha Oktaviani&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@rechaoktaviani&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/t__61ap00Mc&quot;,
+                            &quot;file_name&quot;: &quot;wrench01.avif&quot;,
+                            &quot;title&quot;: &quot;Adjustable wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCP5HZCDFB2VBMD0911S&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                    &quot;unit_price&quot;: 7.23,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 7.5m&quot;,
+                        &quot;price&quot;: 7.23,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Y&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/blue-and-yellow-measuring-tape-faOPbPmznfQ&quot;,
+                            &quot;file_name&quot;: &quot;measure01.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 7.5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPBBV09D4NP63FCHS2P&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XV5KZSJVF4DQMCDBB2&quot;,
+                    &quot;unit_price&quot;: 13.41,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XV5KZSJVF4DQMCDBB2&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer with Shock Reduction Grip&quot;,
+                        &quot;price&quot;: 13.41,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKB&quot;,
+                            &quot;by_name&quot;: &quot;iMattSmart&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@imattsmart&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/jaLaLQdkBOE&quot;,
+                            &quot;file_name&quot;: &quot;hammer01.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCPJC2Y92PFHX31KXX8H&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6H0P3EMHM74257KABQ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                    &quot;unit_price&quot;: 4.65,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Z6S2PSVBYH21GKZET7&quot;,
+                        &quot;name&quot;: &quot;M4 Nuts&quot;,
+                        &quot;price&quot;: 4.65,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAB&quot;,
+                            &quot;by_name&quot;: &quot;Mika Baumeister&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@kommumikation&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-round-coins-c71yQepDEjo&quot;,
+                            &quot;file_name&quot;: &quot;fasteners05.avif&quot;,
+                            &quot;title&quot;: &quot;M4 Nuts&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000028&quot;,
+            &quot;invoice_date&quot;: &quot;2025-09-02 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 886.43,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 29&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKAFP5F88XFVJWA1160&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YNNN63MKN8Q1BTF2AT&quot;,
+                    &quot;unit_price&quot;: 24.26,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YNNN63MKN8Q1BTF2AT&quot;,
+                        &quot;name&quot;: &quot;Safety Goggles&quot;,
+                        &quot;price&quot;: 24.26,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA2&quot;,
+                            &quot;by_name&quot;: &quot;wilson montoya&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@dogblack22&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/black-framed-sunglasses-with-yellow-lens-Cf_d_nDtOcM&quot;,
+                            &quot;file_name&quot;: &quot;goggles01.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Goggles&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKGGA1FQJE3WFF7HV36&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKNHZFDR0HT72XSVCXH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                    &quot;unit_price&quot;: 20.33,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y6SM4NR1RZ58D2D7EM&quot;,
+                        &quot;name&quot;: &quot;Adjustable Wrench&quot;,
+                        &quot;price&quot;: 20.33,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKK&quot;,
+                            &quot;by_name&quot;: &quot;Recha Oktaviani&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@rechaoktaviani&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/t__61ap00Mc&quot;,
+                            &quot;file_name&quot;: &quot;wrench01.avif&quot;,
+                            &quot;title&quot;: &quot;Adjustable wrench&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCKW2KRQVCJWKYAYE50E&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                    &quot;unit_price&quot;: 11.48,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XY7FPDFGZ3SWB1DHGF&quot;,
+                        &quot;name&quot;: &quot;Claw Hammer&quot;,
+                        &quot;price&quot;: 11.48,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKD&quot;,
+                            &quot;by_name&quot;: &quot;Andrew George&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@andrewjoegeorge&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/YU2mCvXR0wA&quot;,
+                            &quot;file_name&quot;: &quot;hammer03.avif&quot;,
+                            &quot;title&quot;: &quot;Claw Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCM1T5GF1EHX1V3M434B&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                    &quot;unit_price&quot;: 10.07,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YHQFEZK5XYYB40MMMQ&quot;,
+                        &quot;name&quot;: &quot;Measuring Tape&quot;,
+                        &quot;price&quot;: 10.07,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Z&quot;,
+                            &quot;by_name&quot;: &quot;Diana Polekhina&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@diana_pole&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/silver-and-black-necklace-on-yellow-textile-iUfusOthmgQ&quot;,
+                            &quot;file_name&quot;: &quot;measure02.avif&quot;,
+                            &quot;title&quot;: &quot;Measuring Tape&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCMCP3X8HXQYNABWYY33&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GMMKZV406MHP82NSHR&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZM18WV2TWXJSF62C3M&quot;,
+                    &quot;unit_price&quot;: 73.59,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZM18WV2TWXJSF62C3M&quot;,
+                        &quot;name&quot;: &quot;Belt Sander&quot;,
+                        &quot;price&quot;: 73.59,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKS&quot;,
+                            &quot;by_name&quot;: &quot;Luther.M.E. Bottrill&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@luthermeb&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/7kHN1-9dD_4&quot;,
+                            &quot;file_name&quot;: &quot;sander02.avif&quot;,
+                            &quot;title&quot;: &quot;Belt sander&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000027&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-24 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 314.87,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 28&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJPDMFDJZ430HBQ0BAZ&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                    &quot;unit_price&quot;: 100.79,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                        &quot;name&quot;: &quot;Random Orbit Sander&quot;,
+                        &quot;price&quot;: 100.79,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKV&quot;,
+                            &quot;by_name&quot;: &quot;Adi Goldstein&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@adigold1&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/aO4c6o4H2MI&quot;,
+                            &quot;file_name&quot;: &quot;sander03.avif&quot;,
+                            &quot;title&quot;: &quot;Random orbit sander&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJZQ5XBHC5NH2EHAAHH&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6GEM9SPX7YS06802DRB&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                    &quot;unit_price&quot;: 6.25,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                        &quot;name&quot;: &quot;Screws&quot;,
+                        &quot;price&quot;: 6.25,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA7&quot;,
+                            &quot;by_name&quot;: &quot;Eliza Diamond&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@eliza28diamonds&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/gray-screw-bolt-lot-pvm5QvjFrJ8&quot;,
+                            &quot;file_name&quot;: &quot;fasteners01.avif&quot;,
+                            &quot;title&quot;: &quot;Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;buy-now-pay-later&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000026&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-10 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 550.92,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 27&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHC887QTV8JHZCDY9ME&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZARYGEGBKR1FT14V8Y&quot;,
+                    &quot;unit_price&quot;: 86.71,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZARYGEGBKR1FT14V8Y&quot;,
+                        &quot;name&quot;: &quot;Tool Cabinet&quot;,
+                        &quot;price&quot;: 86.71,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAF&quot;,
+                            &quot;by_name&quot;: &quot;Georg Eiermann&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@georgeiermann&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-group-of-wooden-objects-uXWbowHdJqk&quot;,
+                            &quot;file_name&quot;: &quot;toolcabinet01.avif&quot;,
+                            &quot;title&quot;: &quot;Tool Cabinet&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHJEHH15NWKWRVGRWE1&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4Y3M94RVQDWDGS28RM9&quot;,
+                    &quot;unit_price&quot;: 18.63,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4Y3M94RVQDWDGS28RM9&quot;,
+                        &quot;name&quot;: &quot;Court Hammer&quot;,
+                        &quot;price&quot;: 18.63,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKH&quot;,
+                            &quot;by_name&quot;: &quot;Wesley Tingey&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@wesleyphotography&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/9z9fxr_7Z-k&quot;,
+                            &quot;file_name&quot;: &quot;hammer07.avif&quot;,
+                            &quot;title&quot;: &quot;Hammer&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHS22HCJ0BN7C5DC9MY&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YM9SX7N7P86DT88QH4&quot;,
+                    &quot;unit_price&quot;: 15.75,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YM9SX7N7P86DT88QH4&quot;,
+                        &quot;name&quot;: &quot;Square Ruler&quot;,
+                        &quot;price&quot;: 15.75,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA1&quot;,
+                            &quot;by_name&quot;: &quot;Markus Spiske&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@markusspiske&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-ruler-with-stand-pwpVGQ-A5qI&quot;,
+                            &quot;file_name&quot;: &quot;measure04.avif&quot;,
+                            &quot;title&quot;: &quot;Square Ruler&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCHZJ47DWYTF1SFBQXF6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZG65DFVGSYKNF5N41F&quot;,
+                    &quot;unit_price&quot;: 61.16,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZG65DFVGSYKNF5N41F&quot;,
+                        &quot;name&quot;: &quot;Leather toolbelt&quot;,
+                        &quot;price&quot;: 61.16,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAJ&quot;,
+                            &quot;by_name&quot;: &quot;jesse orrico&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@jessedo81&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/brown-handled-hammer-and-with-tool-belt-L94dWXNKwrY&quot;,
+                            &quot;file_name&quot;: &quot;toolbelt01.avif&quot;,
+                            &quot;title&quot;: &quot;Leather toolbelt&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJ519AW29PD5N30A42K&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                    &quot;unit_price&quot;: 7.23,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YG8KE9JET0FT63FMVM&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 7.5m&quot;,
+                        &quot;price&quot;: 7.23,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Y&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/blue-and-yellow-measuring-tape-faOPbPmznfQ&quot;,
+                            &quot;file_name&quot;: &quot;measure01.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 7.5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCJB5FW6FSDE25ZPWRQ5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6G42Z9KVP0MJ45KEB14&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XR2TBMX5BGFM97ENBV&quot;,
+                    &quot;unit_price&quot;: 14.24,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XR2TBMX5BGFM97ENBV&quot;,
+                        &quot;name&quot;: &quot;Long Nose Pliers&quot;,
+                        &quot;price&quot;: 14.24,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK9&quot;,
+                            &quot;by_name&quot;: &quot;Brett Jordan&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@brett_jordan&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/GamuDTVm02g&quot;,
+                            &quot;file_name&quot;: &quot;pliers04.avif&quot;,
+                            &quot;title&quot;: &quot;Long nose pliers&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;cash-on-delivery&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000025&quot;,
+            &quot;invoice_date&quot;: &quot;2025-08-05 22:00:12&quot;,
+            &quot;status&quot;: &quot;AWAITING_SHIPMENT&quot;,
+            &quot;total&quot;: 1258.31,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 26&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCFYTJ9PTND9MHYZAMAW&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                    &quot;unit_price&quot;: 46.5,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZX9V8EPZ3G435MN9G0&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 12V&quot;,
+                        &quot;price&quot;: 46.5,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9Q&quot;,
+                            &quot;by_name&quot;: &quot;Manik Roy&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@pixnum&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/_UGTrlvki_A&quot;,
+                            &quot;file_name&quot;: &quot;drill04.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCG71D6GZVHH84PQWVN6&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YWR8PXH12D0477ENQB&quot;,
+                    &quot;unit_price&quot;: 18.58,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YWR8PXH12D0477ENQB&quot;,
+                        &quot;name&quot;: &quot;Ear Protection&quot;,
+                        &quot;price&quot;: 18.58,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAD&quot;,
+                            &quot;by_name&quot;: &quot;cetteup&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@cetteup&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/black-and-red-3m-earmuffs-beside-miter-saw-IC5sX-7PRN8&quot;,
+                            &quot;file_name&quot;: &quot;earprotection01.avif&quot;,
+                            &quot;title&quot;: &quot;Ear Protection&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGE3MBEB5TW0WRDMXMW&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                    &quot;unit_price&quot;: 178.2,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZDBX05Z290RKW1X9KE&quot;,
+                        &quot;name&quot;: &quot;Workbench with Drawers&quot;,
+                        &quot;price&quot;: 178.2,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EAG&quot;,
+                            &quot;by_name&quot;: &quot;Matteo Minoglio&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@ilmino&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/opened-brown-wooden-drawers-m8-NX7WxbpM&quot;,
+                            &quot;file_name&quot;: &quot;workbench02.avif&quot;,
+                            &quot;title&quot;: &quot;Workbench with Drawers&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGMGV06245G6QX08D88&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                    &quot;unit_price&quot;: 100.79,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZQWT36AZWCNW34T303&quot;,
+                        &quot;name&quot;: &quot;Random Orbit Sander&quot;,
+                        &quot;price&quot;: 100.79,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKV&quot;,
+                            &quot;by_name&quot;: &quot;Adi Goldstein&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@adigold1&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/aO4c6o4H2MI&quot;,
+                            &quot;file_name&quot;: &quot;sander03.avif&quot;,
+                            &quot;title&quot;: &quot;Random orbit sander&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCGXPTZSGPEB2JBXE0B5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                    &quot;unit_price&quot;: 35.62,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YQET3KX4WZJC82HT6X&quot;,
+                        &quot;name&quot;: &quot;Safety Helmet Face Shield&quot;,
+                        &quot;price&quot;: 35.62,
+                        &quot;co2_rating&quot;: &quot;B&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: true,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA3&quot;,
+                            &quot;by_name&quot;: &quot;Laurence Ziegler&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@laurenceziegler&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/a-helmet-that-is-on-top-of-a-pile-of-leaves-niKVn6qfYAs&quot;,
+                            &quot;file_name&quot;: &quot;goggles02.avif&quot;,
+                            &quot;title&quot;: &quot;Safety Helmet Face Shield&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCH3PVVZY276TJYMNZZ1&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FYW14TMQ6JNM1211E1&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZWGJ3JXNN8B185CB13&quot;,
+                    &quot;unit_price&quot;: 119.24,
+                    &quot;quantity&quot;: 1,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZWGJ3JXNN8B185CB13&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 18V&quot;,
+                        &quot;price&quot;: 119.24,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5E9P&quot;,
+                            &quot;by_name&quot;: &quot;Jonathan Cooper&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@theshuttervision&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/7sZwThSntdw&quot;,
+                            &quot;file_name&quot;: &quot;drill03.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill 18V&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;gift-card&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+            &quot;user_id&quot;: &quot;01K9G5B4MYHR3D6QJMSFE3XTHA&quot;,
+            &quot;invoice_number&quot;: &quot;INV-20250000023&quot;,
+            &quot;invoice_date&quot;: &quot;2025-07-10 22:00:12&quot;,
+            &quot;status&quot;: &quot;ON_HOLD&quot;,
+            &quot;total&quot;: 281.13,
+            &quot;subtotal&quot;: null,
+            &quot;billing_street&quot;: &quot;Test street 24&quot;,
+            &quot;billing_city&quot;: &quot;Utrecht&quot;,
+            &quot;billing_state&quot;: &quot;Utrecht&quot;,
+            &quot;billing_country&quot;: &quot;The Netherlands&quot;,
+            &quot;billing_postal_code&quot;: &quot;1122AB&quot;,
+            &quot;additional_discount_percentage&quot;: null,
+            &quot;additional_discount_amount&quot;: null,
+            &quot;invoicelines&quot;: [
+                {
+                    &quot;id&quot;: &quot;01K9G5BCD82CHJAXH15SD8PBW2&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                    &quot;unit_price&quot;: 66.54,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4ZTA6YDN8GTFY57P63Z&quot;,
+                        &quot;name&quot;: &quot;Cordless Drill 24V&quot;,
+                        &quot;price&quot;: 66.54,
+                        &quot;co2_rating&quot;: &quot;E&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NKX&quot;,
+                            &quot;by_name&quot;: &quot;NeONBRAND&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@neonbrand&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/CuDoRFyTkAQ&quot;,
+                            &quot;file_name&quot;: &quot;drill02.avif&quot;,
+                            &quot;title&quot;: &quot;Cordless Drill&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCDG8GD85R9CQHX4YJW5&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4XNC9PJ8AT73E2YWME6&quot;,
+                    &quot;unit_price&quot;: 48.41,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4XNC9PJ8AT73E2YWME6&quot;,
+                        &quot;name&quot;: &quot;Bolt Cutters&quot;,
+                        &quot;price&quot;: 48.41,
+                        &quot;co2_rating&quot;: &quot;D&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WSC67Z63YRPGVV0NK8&quot;,
+                            &quot;by_name&quot;: &quot;Michael Dziedzic&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@lazycreekimages&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/pM9pkc9J918&quot;,
+                            &quot;file_name&quot;: &quot;pliers03.avif&quot;,
+                            &quot;title&quot;: &quot;Bolt cutters&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCDTBA3ECVGBWP32F0MR&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YJE18TP05Q0VPA791W&quot;,
+                    &quot;unit_price&quot;: 12.91,
+                    &quot;quantity&quot;: 3,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YJE18TP05Q0VPA791W&quot;,
+                        &quot;name&quot;: &quot;Tape Measure 5m&quot;,
+                        &quot;price&quot;: 12.91,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA0&quot;,
+                            &quot;by_name&quot;: &quot;Immo Wegmann&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@macroman&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/yellow-and-black-measuring-tape-1abCQ_3g_UY&quot;,
+                            &quot;file_name&quot;: &quot;measure03.avif&quot;,
+                            &quot;title&quot;: &quot;Tape Measure 5m&quot;
+                        }
+                    }
+                },
+                {
+                    &quot;id&quot;: &quot;01K9G5BCE8FBKBZGWE308STW8S&quot;,
+                    &quot;invoice_id&quot;: &quot;01K9G5B6FNQFGQC57CAY432CJ3&quot;,
+                    &quot;product_id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                    &quot;unit_price&quot;: 6.25,
+                    &quot;quantity&quot;: 2,
+                    &quot;discount_percentage&quot;: null,
+                    &quot;discounted_price&quot;: null,
+                    &quot;product&quot;: {
+                        &quot;id&quot;: &quot;01K9G5B4YYVXES6P4TS4Z4W453&quot;,
+                        &quot;name&quot;: &quot;Screws&quot;,
+                        &quot;price&quot;: 6.25,
+                        &quot;co2_rating&quot;: &quot;C&quot;,
+                        &quot;in_stock&quot;: false,
+                        &quot;is_eco_friendly&quot;: false,
+                        &quot;product_image&quot;: {
+                            &quot;id&quot;: &quot;01K9G5B4WTGKVBV81MESBM5EA7&quot;,
+                            &quot;by_name&quot;: &quot;Eliza Diamond&quot;,
+                            &quot;by_url&quot;: &quot;https://unsplash.com/@eliza28diamonds&quot;,
+                            &quot;source_name&quot;: &quot;Unsplash&quot;,
+                            &quot;source_url&quot;: &quot;https://unsplash.com/photos/gray-screw-bolt-lot-pvm5QvjFrJ8&quot;,
+                            &quot;file_name&quot;: &quot;fasteners01.avif&quot;,
+                            &quot;title&quot;: &quot;Screws&quot;
+                        }
+                    }
+                }
+            ],
+            &quot;payment&quot;: {
+                &quot;payment_method&quot;: &quot;bank-transfer&quot;
+            }
+        }
+    ],
+    &quot;from&quot;: 1,
+    &quot;last_page&quot;: 11,
+    &quot;per_page&quot;: 15,
+    &quot;to&quot;: 15,
+    &quot;total&quot;: 164
+}
+==================================================
+
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 7 Nov 2025, 22:07:40</p>
+</div>
+</div>
+</body>
+</html>

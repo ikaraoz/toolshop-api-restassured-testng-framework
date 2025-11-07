@@ -1,0 +1,48 @@
+<div>POST to https://api.practicesoftwaretesting.com/invoices</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;billing_street&quot;: &quot;123 Main St&quot;,
+    &quot;billing_city&quot;: &quot;Testville&quot;,
+    &quot;billing_state&quot;: &quot;CA&quot;,
+    &quot;billing_country&quot;: &quot;US&quot;,
+    &quot;billing_postal_code&quot;: &quot;90001&quot;,
+    &quot;payment_method&quot;: &quot;bank-transfer&quot;,
+    &quot;cart_id&quot;: &quot;01k9g5htnwzmn98z08nz9kymb6&quot;,
+    &quot;payment_details&quot;: {
+        &quot;bank_name&quot;: &quot;BankX&quot;,
+        &quot;account_name&quot;: &quot;John Dow&quot;,
+        &quot;account_number&quot;: &quot;12345678&quot;
+    }
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMwMzEsImV4cCI6MTc2MjU1MzMzMSwibmJmIjoxNzYyNTUzMDMxLCJqdGkiOiJXOVR0ODQ0V1NTUXgwUFlqIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.7K5QM2y9kaS5SMGpylWdkO3_kry_Cm3tXzYoN-fuYt4</div>
+            <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://api.practicesoftwaretesting.com/invoices&#39; -H &#39;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMwMzEsImV4cCI6MTc2MjU1MzMzMSwibmJmIjoxNzYyNTUzMDMxLCJqdGkiOiJXOVR0ODQ0V1NTUXgwUFlqIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.7K5QM2y9kaS5SMGpylWdkO3_kry_Cm3tXzYoN-fuYt4&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;billing_street&quot;: &quot;123 Main St&quot;,
+    &quot;billing_city&quot;: &quot;Testville&quot;,
+    &quot;billing_state&quot;: &quot;CA&quot;,
+    &quot;billing_country&quot;: &quot;US&quot;,
+    &quot;billing_postal_code&quot;: &quot;90001&quot;,
+    &quot;payment_method&quot;: &quot;bank-transfer&quot;,
+    &quot;cart_id&quot;: &quot;01k9g5htnwzmn98z08nz9kymb6&quot;,
+    &quot;payment_details&quot;: {
+        &quot;bank_name&quot;: &quot;BankX&quot;,
+        &quot;account_name&quot;: &quot;John Dow&quot;,
+        &quot;account_number&quot;: &quot;12345678&quot;
+    }
+}&#39;
+    </div>
+

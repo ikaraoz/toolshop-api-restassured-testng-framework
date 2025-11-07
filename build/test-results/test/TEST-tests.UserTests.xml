@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.UserTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-07T22:07:40" hostname="00158MY" time="0.556">
+  <properties/>
+  <testcase name="login_returns_token" classname="tests.UserTests" time="0.228"/>
+  <testcase name="register_creates_user" classname="tests.UserTests" time="0.327"/>
+  <system-out><![CDATA[Request URI:	https://api.practicesoftwaretesting.com/users/login
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.422566
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+Status Code: 200
+Response Body:
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNjAsImV4cCI6MTc2MjU1MzU2MCwibmJmIjoxNzYyNTUzMjYwLCJqdGkiOiJvQnRXZTA4WUZqWW5zTkIzIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.pQc5HD6JhX0LIEvtTcbQ0sYRCS0BVVO5r3deeZmova4",
+    "token_type": "bearer",
+    "expires_in": 300
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.423152
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+Status Code: 200
+Response Body:
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNjAsImV4cCI6MTc2MjU1MzU2MCwibmJmIjoxNzYyNTUzMjYwLCJqdGkiOiJvQnRXZTA4WUZqWW5zTkIzIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.pQc5HD6JhX0LIEvtTcbQ0sYRCS0BVVO5r3deeZmova4",
+    "token_type": "bearer",
+    "expires_in": 300
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.423687
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+Status Code: 200
+Response Body:
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNjAsImV4cCI6MTc2MjU1MzU2MCwibmJmIjoxNzYyNTUzMjYwLCJqdGkiOiJvQnRXZTA4WUZqWW5zTkIzIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.pQc5HD6JhX0LIEvtTcbQ0sYRCS0BVVO5r3deeZmova4",
+    "token_type": "bearer",
+    "expires_in": 300
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.424322
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/login
+Request Body:
+{"email":"customer@practicesoftwaretesting.com","password":"welcome01"}
+Status Code: 200
+Response Body:
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NjI1NTMyNjAsImV4cCI6MTc2MjU1MzU2MCwibmJmIjoxNzYyNTUzMjYwLCJqdGkiOiJvQnRXZTA4WUZqWW5zTkIzIiwic3ViIjoiMDFLOUc1QjRNWUhSM0Q2UUpNU0ZFM1hUSEEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InVzZXIifQ.pQc5HD6JhX0LIEvtTcbQ0sYRCS0BVVO5r3deeZmova4",
+    "token_type": "bearer",
+    "expires_in": 300
+}
+==================================================
+
+
+Request URI:	https://api.practicesoftwaretesting.com/users/register
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.760058
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/register
+Request Body:
+{"first_name":"Alice","last_name":"Smith","email":"user_4feac876@example.com","password":"1S8YzPI4rd@1"}
+Status Code: 201
+Response Body:
+{
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "user_4feac876@example.com",
+    "id": "01k9g5rtwmy8a5hwk9ezx1wk52",
+    "created_at": "2025-11-07 22:07:40",
+    "address": {
+        "street": null,
+        "city": null,
+        "state": null,
+        "country": null,
+        "postal_code": null
+    }
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.760575
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/register
+Request Body:
+{"first_name":"Alice","last_name":"Smith","email":"user_4feac876@example.com","password":"1S8YzPI4rd@1"}
+Status Code: 201
+Response Body:
+{
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "user_4feac876@example.com",
+    "id": "01k9g5rtwmy8a5hwk9ezx1wk52",
+    "created_at": "2025-11-07 22:07:40",
+    "address": {
+        "street": null,
+        "city": null,
+        "state": null,
+        "country": null,
+        "postal_code": null
+    }
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.761099
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/register
+Request Body:
+{"first_name":"Alice","last_name":"Smith","email":"user_4feac876@example.com","password":"1S8YzPI4rd@1"}
+Status Code: 201
+Response Body:
+{
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "user_4feac876@example.com",
+    "id": "01k9g5rtwmy8a5hwk9ezx1wk52",
+    "created_at": "2025-11-07 22:07:40",
+    "address": {
+        "street": null,
+        "city": null,
+        "state": null,
+        "country": null,
+        "postal_code": null
+    }
+}
+==================================================
+
+
+
+==================== API CALL ====================
+Timestamp: 2025-11-07T22:07:40.761490
+Method: POST
+Request URI: https://api.practicesoftwaretesting.com/users/register
+Request Body:
+{"first_name":"Alice","last_name":"Smith","email":"user_4feac876@example.com","password":"1S8YzPI4rd@1"}
+Status Code: 201
+Response Body:
+{
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "user_4feac876@example.com",
+    "id": "01k9g5rtwmy8a5hwk9ezx1wk52",
+    "created_at": "2025-11-07 22:07:40",
+    "address": {
+        "street": null,
+        "city": null,
+        "state": null,
+        "country": null,
+        "postal_code": null
+    }
+}
+==================================================
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
