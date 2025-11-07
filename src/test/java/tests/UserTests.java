@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import payloads.LoginRequest;
 import payloads.RegisterUserRequest;
+import responses.users.LoginResponse;
 import utils.DataFactory;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -20,9 +21,9 @@ public class UserTests extends BaseTest {
                 .build());
 
         assertThat(res.statusCode()).isEqualTo(200);
-        String token = res.jsonPath().getString("access_token");
-        if (token == null || token.isBlank()) token = res.jsonPath().getString("token");
-        assertThat(token).isNotBlank();
+        String token = res.as(LoginResponse.class).getAccessToken();
+//        if (token == null || token.isBlank()) token = res.jsonPath().getString("token");
+        assertThat(token).isNotNull();
     }
 
     @Test(groups = {"regression"})
