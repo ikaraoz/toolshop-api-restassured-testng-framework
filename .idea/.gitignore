@@ -1,3 +1,53 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# ==========================================
+# 💡 Java / Gradle API Test Framework .gitignore
+# ==========================================
+
+# --- Gradle build artifacts ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- IntelliJ IDEA / JetBrains ---
+.idea/
+*.iml
+out/
+
+# --- VS Code ---
+.vscode/
+
+# --- Logs ---
+*.log
+logs/
+build/logs/
+
+# --- Allure test reports ---
+allure-results/
+allure-report/
+
+# --- OS-generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Temporary files ---
+*.tmp
+*.swp
+*.bak
+*.class
+
+# --- Dependency directories (if any) ---
+bin/
+target/
+
+# --- Environment / Secrets ---
+.env
+*.properties.local
+
+# --- Generated test artifacts ---
+test-output/
+reports/
+*.html
+
+# --- JAR / WAR / EAR files ---
+*.jar
+*.war
+*.ear

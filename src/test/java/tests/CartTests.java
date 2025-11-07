@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import payloads.LoginRequest;
 import payloads.RegisterUserRequest;
 import payloads.carts.AddItemToCartRequest;
+import responses.carts.CreateCartResponse;
 import responses.products.ProductListResponse;
 import utils.DataFactory;
 
@@ -20,13 +21,15 @@ public class CartTests extends BaseTest {
     public void create_cart_creates_new_cart() {
         Response resp = createCart();
         assertThat(resp.statusCode()).isIn(201);
+        CreateCartResponse c = resp.as(CreateCartResponse.class);
+        assertThat(c.getId()).isNotNull();
     }
 
     @Test(groups = {"regression"})
     public void addItemToCart_succeeds_whenRequestIsValid() {
         // Cart Id
-        Response cart = createCart();
-        String cId = cart.jsonPath().getString("id");
+        CreateCartResponse cart = createCart().as(CreateCartResponse.class);
+        String cId = cart.getId();
         assertThat(cId).as("cart id").isNotNull();
 
         //Get product list and Id
