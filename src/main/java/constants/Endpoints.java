@@ -15,6 +15,9 @@ public final class Endpoints {
 
     public static final String CARTS = "/carts";
     public static final String CARTS_BY_ID = "/carts/{id}";
+    public static final String CARTS_BY_CART_ID = "/carts/{cartId}";
+    public static final String CARTS_UPDATE_QUANTITY_BY_ID = "/carts/{cartId}/product/quantity";
+    public static final String CARTS_DELETE_PRODUCT_FROM_CART = "/carts/{cartId}/product/{productId}";
 
 
 
