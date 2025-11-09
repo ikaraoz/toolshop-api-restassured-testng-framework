@@ -39,7 +39,7 @@ jobs:
           java-version: "21"
           distribution: "temurin"
 
-      - name: ⚙️ Set Gradle wrapper executable
+      - name: ⚙️ Make Gradle executable
         run: chmod +x gradlew
 
       - name: 🚀 Run API tests
@@ -54,7 +54,7 @@ jobs:
       - name: 🧾 Generate Allure report
         run: ./gradlew allureReport --info
 
-      - name: 🧹 Add cache-busting & timestamp files
+      - name: 🧹 Add cache-busting & timestamp
         run: |
           REPORT_DIR="${{ env.REPORT_BASE }}"
           mkdir -p "$REPORT_DIR"
@@ -62,7 +62,6 @@ jobs:
           echo "Cache-Control: no-cache, no-store, must-revalidate" > "$REPORT_DIR/.htaccess"
           date > "$REPORT_DIR/build-time.txt"
           echo "✅ Cache-busting and timestamp added to $REPORT_DIR"
-          ls -R "$REPORT_DIR"
 
       - name: 🕒 Prepare historical report folder
         id: report_info
@@ -74,7 +73,15 @@ jobs:
           cp -r build/reports/allure-report/allureReport/* "build/history/$DEST_DIR/"
           echo "✅ Copied Allure report to build/history/$DEST_DIR"
 
-      - name: 🌐 Publish Allure report (with history)
+      - name: 🧼 Clean up old historical reports (keep last 10)
+        run: |
+          mkdir -p build/history
+          echo "Cleaning up old reports, keeping last 10..."
+          ls -dt build/history/*/ | tail -n +11 | xargs -r rm -rf
+          echo "✅ Clean-up complete"
+          ls -dt build/history/*/ || echo "No history yet"
+
+      - name: 🌐 Publish Allure report with history
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -83,7 +90,6 @@ jobs:
           publish_dir: build/history
           force_orphan: true
           commit_message: "🧾 Publish Allure report for ${{ inputs.env }} at $(date -u)"
-          cname: ""
 
       - name: 💾 Upload latest Allure report as artifact
         if: always()
