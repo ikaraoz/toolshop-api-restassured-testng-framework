@@ -58,9 +58,19 @@ jobs:
         run: |
           DATE_DIR=$(date -u +"%Y-%m-%d_%H-%M-%S")
           DEST_DIR="history/${DATE_DIR}_${{ inputs.env }}"
-          mkdir -p "build/history/$DEST_DIR"
-          cp -r build/reports/allure-report/allureReport/* "build/history/$DEST_DIR/"
+          mkdir -p "build/history/${DEST_DIR}"
+          echo "✅ Copying Allure report to build/history/${DEST_DIR}/"
+          if [ -d "build/reports/allure-report" ]; then
+            cp -r build/reports/allure-report/* "build/history/${DEST_DIR}/"
+          elif [ -d "build/reports/allureReport" ]; then
+            cp -r build/reports/allureReport/* "build/history/${DEST_DIR}/"
+          else
+            echo "❌ ERROR: Allure report directory not found!"
+            exit 1
+          fi
           echo "dest_dir=$DEST_DIR" >> $GITHUB_OUTPUT
+          echo "📂 Contents of destination:"
+          ls -R "build/history/${DEST_DIR}"
 
       - name: 🧼 Keep only the latest 10 reports
         run: |
