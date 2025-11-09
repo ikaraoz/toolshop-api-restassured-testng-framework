@@ -50,7 +50,7 @@ jobs:
           if [ "${{ inputs.groups }}" != "all" ]; then
             GROUP_ARG="-Dgroups=${{ inputs.groups }}"
           fi
-          # ✅ Allow the pipeline to continue even if tests fail
+          # ✅ Continue even if tests fail, so Allure can still run
           ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }} || true
 
       - name: 🧾 Generate Allure report
@@ -58,8 +58,8 @@ jobs:
 
       - name: 📂 Verify Allure report path
         run: |
-          echo "Verifying report at build/reports/allure-report/allureReport"
-          ls -R build/reports/allure-report/allureReport || (echo "❌ Allure report missing!" && exit 1)
+          echo "Verifying report at ${{ env.REPORT_PATH }}"
+          ls -R ${{ env.REPORT_PATH }} || (echo "❌ Allure report missing!" && exit 1)
 
       - name: 🕒 Prepare history folder
         id: report_info
@@ -88,14 +88,16 @@ jobs:
             echo "<li><a href=\"${folder}/index.html\">${folder}</a></li>" >> $INDEX_FILE
           done
           echo "</ul></body></html>" >> $INDEX_FILE
+          echo "✅ index.html generated at build/history/index.html"
 
+      # ✅ Publish to gh-pages root (so /history/index.html works)
       - name: 🌐 Publish Allure reports + index to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: build/history
+          publish_dir: build     # 👈 changed from build/history
           force_orphan: true
           commit_message: "🧾 Publish Allure report for ${{ inputs.env }} - ${{ inputs.groups }}"
 
