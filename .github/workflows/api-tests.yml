@@ -1,12 +1,24 @@
 name: API Test Pipeline
 
 on:
-  workflow_dispatch:        # manual trigger
+  workflow_dispatch:
+    inputs:
+      env:
+        description: "Target environment"
+        required: true
+        default: "qa"
+        type: choice
+        options: [local, qa, staging]
+      groups:
+        description: "TestNG group to run"
+        required: true
+        default: "all"
+        type: choice
+        options: [all, smoke, regression]
   schedule:
-    - cron: "0 2 * * *"     # every day at 2 AM UTC
+    - cron: "0 2 * * *" # every day at 2 AM UTC
   push:
-    branches:
-      - main                # run when main branch is updated
+    branches: [main]
 
 jobs:
   test:
@@ -30,13 +42,36 @@ jobs:
         run: chmod +x gradlew
 
       - name: 🚀 Run API tests
-        run: ./gradlew clean test -Denv=qa
+        run: |
+          echo "Running tests for environment: ${{ inputs.env }}"
+          GROUP_ARG=""
+          if [ "${{ inputs.groups }}" != "all" ]; then
+            GROUP_ARG="-Dgroups=${{ inputs.groups }}"
+          fi
+          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }}
 
       - name: 🧾 Generate Allure report
-        run: ./gradlew allureReport
+        run: ./gradlew allureReport --info
 
-      - name: 📊 Upload Allure results as artifact
+      - name: 📂 Verify Allure output
+        run: |
+          echo "Listing generated Allure files..."
+          ls -R build/reports/allure-report || true
+          ls -R build/allure-results || true
+
+      - name: 🌐 Publish Allure report to GitHub Pages
+        if: always() # publish even if tests fail
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/reports/allure-report/allureReport
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "🧾 Publish Allure report from workflow run"
+
+      - name: 💾 Upload Allure report as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: build/reports/allure-report
+          name: allure-report-${{ inputs.env }}-${{ inputs.groups }}
+          path: build/reports/allure-report/allureReport
