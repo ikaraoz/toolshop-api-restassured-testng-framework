@@ -54,21 +54,12 @@ jobs:
           ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }} || true
 
       - name: 🧾 Generate Allure report
-        run: ./gradlew allureReport --info
+        run: ./gradlew cleanAllureReport allureReport --rerun-tasks --info
 
-      - name: 🔍 Verify Allure report path exists
-        id: verify_report
+      - name: 📂 Verify Allure report path
         run: |
-          echo "Checking for Allure report at: $REPORT_PATH"
-          if [ ! -d "$REPORT_PATH" ]; then
-            echo "❌ ERROR: $REPORT_PATH not found!"
-            echo "Listing contents of build/reports:"
-            ls -R build/reports || true
-            exit 1
-          fi
-          echo "✅ Found report at $REPORT_PATH"
-          echo "report_dir=$REPORT_PATH" >> $GITHUB_OUTPUT
-          ls -la "$REPORT_PATH"
+          echo "Verifying report at build/reports/allure-report/allureReport"
+          ls -R build/reports/allure-report/allureReport || (echo "❌ Allure report missing!" && exit 1)
 
       - name: 🕒 Prepare history folder
         id: report_info
