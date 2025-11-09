@@ -16,7 +16,7 @@ on:
         type: choice
         options: [all, smoke, regression]
   schedule:
-    - cron: "0 2 * * *" # Run every day at 2 AM UTC
+    - cron: "0 2 * * *" # run daily at 2 AM UTC
   push:
     branches: [main]
 
@@ -26,8 +26,7 @@ jobs:
 
     env:
       ALLURE_RESULTS: build/allure-results
-      ALLURE_REPORT: build/reports/allure-report
-      REPORT_BASE: build/reports/allure-report/allureReport
+      ALLURE_REPORT: build/reports/allure-report/allureReport
 
     steps:
       - name: 🧩 Checkout repository
@@ -54,34 +53,36 @@ jobs:
       - name: 🧾 Generate Allure report
         run: ./gradlew allureReport --info
 
-      - name: 🧹 Add cache-busting & timestamp
-        run: |
-          REPORT_DIR="${{ env.REPORT_BASE }}"
-          mkdir -p "$REPORT_DIR"
-          echo "" > "$REPORT_DIR/.nojekyll"
-          echo "Cache-Control: no-cache, no-store, must-revalidate" > "$REPORT_DIR/.htaccess"
-          date > "$REPORT_DIR/build-time.txt"
-          echo "✅ Cache-busting and timestamp added to $REPORT_DIR"
-
-      - name: 🕒 Prepare historical report folder
+      - name: 🕒 Prepare historical folder
         id: report_info
         run: |
           DATE_DIR=$(date -u +"%Y-%m-%d_%H-%M-%S")
           DEST_DIR="history/${DATE_DIR}_${{ inputs.env }}"
-          echo "dest_dir=$DEST_DIR" >> $GITHUB_OUTPUT
           mkdir -p "build/history/$DEST_DIR"
           cp -r build/reports/allure-report/allureReport/* "build/history/$DEST_DIR/"
-          echo "✅ Copied Allure report to build/history/$DEST_DIR"
+          echo "dest_dir=$DEST_DIR" >> $GITHUB_OUTPUT
 
-      - name: 🧼 Clean up old historical reports (keep last 10)
+      - name: 🧼 Keep only the latest 10 reports
         run: |
           mkdir -p build/history
-          echo "Cleaning up old reports, keeping last 10..."
           ls -dt build/history/*/ | tail -n +11 | xargs -r rm -rf
-          echo "✅ Clean-up complete"
+          echo "✅ Old reports cleaned"
           ls -dt build/history/*/ || echo "No history yet"
 
-      - name: 🌐 Publish Allure report with history
+      - name: 🧭 Generate index.html for GitHub Pages
+        run: |
+          mkdir -p build/history
+          INDEX_FILE=build/history/index.html
+          echo "<html><head><title>Allure Report History</title></head><body>" > $INDEX_FILE
+          echo "<h1>Allure Report History</h1><ul>" >> $INDEX_FILE
+          for d in $(ls -dt build/history/*/ | head -n 10); do
+            folder=$(basename "$d")
+            echo "<li><a href=\"history/${folder}/\">${folder}</a></li>" >> $INDEX_FILE
+          done
+          echo "</ul></body></html>" >> $INDEX_FILE
+          echo "✅ index.html generated at build/history/index.html"
+
+      - name: 🌐 Publish Allure reports + index to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -89,7 +90,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: build/history
           force_orphan: true
-          commit_message: "🧾 Publish Allure report for ${{ inputs.env }} at $(date -u)"
+          commit_message: "🧾 Publish Allure report with history for ${{ inputs.env }}"
 
       - name: 💾 Upload latest Allure report as artifact
         if: always()
