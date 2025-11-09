@@ -60,12 +60,12 @@ jobs:
           ls -R build/allure-results || true
 
       - name: 🌐 Publish Allure report to GitHub Pages
-        if: always() # publish even if tests fail
+        if: always() # always run this even if tests fail
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/reports/allure-report/allureReport
           publish_branch: gh-pages
+          publish_dir: build/reports/allure-report
           force_orphan: true
           commit_message: "🧾 Publish Allure report from workflow run"
 
