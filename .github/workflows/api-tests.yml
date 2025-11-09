@@ -20,13 +20,15 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
 
     env:
-      ALLURE_RESULTS: build/allure-results
-      ALLURE_REPORT: build/reports/allure-report/allureReport
+      REPORT_PATH: build/reports/allure-report/allureReport
 
     steps:
       - name: 🧩 Checkout repository
@@ -53,33 +55,37 @@ jobs:
       - name: 🧾 Generate Allure report
         run: ./gradlew allureReport --info
 
-      - name: 🕒 Prepare historical folder
+      - name: 🔍 Verify Allure report path exists
+        id: verify_report
+        run: |
+          echo "Checking for Allure report at: $REPORT_PATH"
+          if [ ! -d "$REPORT_PATH" ]; then
+            echo "❌ ERROR: $REPORT_PATH not found!"
+            echo "Listing contents of build/reports:"
+            ls -R build/reports || true
+            exit 1
+          fi
+          echo "✅ Found report at $REPORT_PATH"
+          echo "report_dir=$REPORT_PATH" >> $GITHUB_OUTPUT
+          ls -la "$REPORT_PATH"
+
+      - name: 🕒 Prepare history folder
         id: report_info
         run: |
           DATE_DIR=$(date -u +"%Y-%m-%d_%H-%M-%S")
           DEST_DIR="history/${DATE_DIR}_${{ inputs.env }}"
           mkdir -p "build/history/${DEST_DIR}"
-          echo "✅ Copying Allure report to build/history/${DEST_DIR}/"
-          if [ -d "build/reports/allure-report" ]; then
-            cp -r build/reports/allure-report/* "build/history/${DEST_DIR}/"
-          elif [ -d "build/reports/allureReport" ]; then
-            cp -r build/reports/allureReport/* "build/history/${DEST_DIR}/"
-          else
-            echo "❌ ERROR: Allure report directory not found!"
-            exit 1
-          fi
+          cp -r "${{ env.REPORT_PATH }}"/* "build/history/${DEST_DIR}/"
           echo "dest_dir=$DEST_DIR" >> $GITHUB_OUTPUT
-          echo "📂 Contents of destination:"
-          ls -R "build/history/${DEST_DIR}"
+          echo "✅ Copied report to build/history/${DEST_DIR}"
 
-      - name: 🧼 Keep only the latest 10 reports
+      - name: 🧼 Keep only last 10 reports
         run: |
           mkdir -p build/history
           ls -dt build/history/*/ | tail -n +11 | xargs -r rm -rf
-          echo "✅ Old reports cleaned"
-          ls -dt build/history/*/ || echo "No history yet"
+          echo "✅ Cleaned old reports"
 
-      - name: 🧭 Generate index.html for GitHub Pages
+      - name: 🧭 Generate index.html
         run: |
           mkdir -p build/history
           INDEX_FILE=build/history/index.html
@@ -87,10 +93,10 @@ jobs:
           echo "<h1>Allure Report History</h1><ul>" >> $INDEX_FILE
           for d in $(ls -dt build/history/*/ | head -n 10); do
             folder=$(basename "$d")
-            echo "<li><a href=\"history/${folder}/\">${folder}</a></li>" >> $INDEX_FILE
+            echo "<li><a href=\"${folder}/index.html\">${folder}</a></li>" >> $INDEX_FILE
           done
           echo "</ul></body></html>" >> $INDEX_FILE
-          echo "✅ index.html generated at build/history/index.html"
+          echo "✅ index.html generated"
 
       - name: 🌐 Publish Allure reports + index to GitHub Pages
         if: always()
@@ -100,11 +106,11 @@ jobs:
           publish_branch: gh-pages
           publish_dir: build/history
           force_orphan: true
-          commit_message: "🧾 Publish Allure report with history for ${{ inputs.env }}"
+          commit_message: "🧾 Publish Allure report for ${{ inputs.env }} - ${{ inputs.groups }}"
 
-      - name: 💾 Upload latest Allure report as artifact
+      - name: 💾 Upload Allure report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report-${{ inputs.env }}-${{ inputs.groups }}
-          path: build/reports/allure-report/allureReport
+          path: ${{ env.REPORT_PATH }}
