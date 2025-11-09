@@ -50,60 +50,27 @@ jobs:
           if [ "${{ inputs.groups }}" != "all" ]; then
             GROUP_ARG="-Dgroups=${{ inputs.groups }}"
           fi
-          # ✅ Continue even if tests fail, so Allure can still run
-          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }} || true
+          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }}
 
       - name: 🧾 Generate Allure report
-        run: ./gradlew cleanAllureReport allureReport --rerun-tasks --info
+        run: ./gradlew allureReport --info
 
-      - name: 📂 Verify Allure report path
+      - name: 📂 Verify Allure report exists
         run: |
-          echo "Verifying report at ${{ env.REPORT_PATH }}"
+          echo "Verifying generated Allure report at ${{ env.REPORT_PATH }}"
           ls -R ${{ env.REPORT_PATH }} || (echo "❌ Allure report missing!" && exit 1)
 
-      - name: 🕒 Prepare history folder
-        id: report_info
-        run: |
-          DATE_DIR=$(date -u +"%Y-%m-%d_%H-%M-%S")
-          DEST_DIR="history/${DATE_DIR}_${{ inputs.env }}"
-          mkdir -p "build/history/${DEST_DIR}"
-          cp -r "${{ env.REPORT_PATH }}"/* "build/history/${DEST_DIR}/"
-          echo "dest_dir=$DEST_DIR" >> $GITHUB_OUTPUT
-          echo "✅ Copied report to build/history/${DEST_DIR}"
-
-      - name: 🧼 Keep only last 10 reports
-        run: |
-          mkdir -p build/history
-          ls -dt build/history/*/ | tail -n +11 | xargs -r rm -rf
-          echo "✅ Cleaned old reports"
-
-      - name: 🧭 Generate index.html for Allure history
-        run: |
-          mkdir -p build/history
-          INDEX_FILE=build/history/index.html
-          echo "<html><head><title>Allure Reports</title></head><body>" > $INDEX_FILE
-          echo "<h1>Allure Report History</h1><ul>" >> $INDEX_FILE
-          for d in $(ls -dt build/history/*/ | head -n 10); do
-            folder=$(basename "$d")
-            echo "<li><a href=\"${folder}/index.html\">${folder}</a></li>" >> $INDEX_FILE
-          done
-          echo "</ul></body></html>" >> $INDEX_FILE
-          echo "✅ index.html generated at build/history/index.html"
-
-      # ✅ Publish to gh-pages root (so /history/index.html works)
-      - name: 🌐 Publish Allure reports + index to GitHub Pages
+      - name: 🌐 Publish Allure report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: build     # 👈 changed from build/history
+          publish_dir: ${{ env.REPORT_PATH }}
           force_orphan: true
           commit_message: "🧾 Publish Allure report for ${{ inputs.env }} - ${{ inputs.groups }}"
 
-      - name: 💾 Upload Allure report as artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report-${{ inputs.env }}-${{ inputs.groups }}
-          path: ${{ env.REPORT_PATH }}
+      - name: 🔗 Log published report URL
+        run: |
+          echo "✅ Allure report published successfully!"
+          echo "🌐 URL: https://ikaraoz.github.io/toolshop-api-restassured-testng-framework/"
