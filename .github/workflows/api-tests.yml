@@ -26,7 +26,11 @@ jobs:
 
     env:
       ALLURE_RESULTS: build/allure-results
-      ALLURE_REPORT: build/reports/allure-report
+      ALLURE_REPORT: build/reports/allure-report/allureReport
+
+    permissions:
+      contents: write   # ✅ required for GitHub Pages publishing
+      actions: read
 
     steps:
       - name: 🧩 Checkout repository
@@ -60,12 +64,12 @@ jobs:
           ls -R build/allure-results || true
 
       - name: 🌐 Publish Allure report to GitHub Pages
-        if: always() # always run this even if tests fail
+        if: always() # ✅ even if tests fail
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: build/reports/allure-report
+          publish_dir: build/reports/allure-report/allureReport
           force_orphan: true
           commit_message: "🧾 Publish Allure report from workflow run"
 
