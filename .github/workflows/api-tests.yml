@@ -77,18 +77,17 @@ jobs:
           ls -dt build/history/*/ | tail -n +11 | xargs -r rm -rf
           echo "✅ Cleaned old reports"
 
-      - name: 🧭 Generate index.html
+      - name: 🧭 Generate index.html for Allure history
         run: |
           mkdir -p build/history
           INDEX_FILE=build/history/index.html
-          echo "<html><head><title>Allure Report History</title></head><body>" > $INDEX_FILE
+          echo "<html><head><title>Allure Reports</title></head><body>" > $INDEX_FILE
           echo "<h1>Allure Report History</h1><ul>" >> $INDEX_FILE
           for d in $(ls -dt build/history/*/ | head -n 10); do
             folder=$(basename "$d")
             echo "<li><a href=\"${folder}/index.html\">${folder}</a></li>" >> $INDEX_FILE
           done
           echo "</ul></body></html>" >> $INDEX_FILE
-          echo "✅ index.html generated"
 
       - name: 🌐 Publish Allure reports + index to GitHub Pages
         if: always()
