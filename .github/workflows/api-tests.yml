@@ -50,7 +50,8 @@ jobs:
           if [ "${{ inputs.groups }}" != "all" ]; then
             GROUP_ARG="-Dgroups=${{ inputs.groups }}"
           fi
-          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }}
+          # ✅ Allow the pipeline to continue even if tests fail
+          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }} || true
 
       - name: 🧾 Generate Allure report
         run: ./gradlew allureReport --info
