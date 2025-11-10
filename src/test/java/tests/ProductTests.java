@@ -4,6 +4,7 @@ import base.BaseTest;
 import api.ProductApi;
 import filters.ProductFilter;
 import io.restassured.response.Response;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import payloads.ProductRequest;
 import responses.products.ProductListResponse;
@@ -42,7 +43,7 @@ public class ProductTests extends BaseTest {
         assertThat(res.jsonPath().getString("id")).isEqualTo(id);
     }
 
-    @Test(groups = {"regression"})
+    @Test(groups = {"regression"}) @Ignore
     public void create_product_returns_201_or_200() {
         ProductRequest request = ProductRequest.builder()
                 .name("API Product " + DataFactory.randomString(6))

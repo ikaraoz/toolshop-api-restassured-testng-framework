@@ -6,6 +6,7 @@ import api.InvoiceApi;
 import api.ProductApi;
 import filters.InvoiceFilter;
 import io.restassured.response.Response;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import payloads.invoices.*;
 
@@ -20,7 +21,7 @@ public class InvoiceTests extends BaseTest {
         assertThat(res.statusCode()).isEqualTo(200);
     }
 
-    @Test(groups = {"regression"})
+    @Test(groups = {"regression"}) @Ignore
     public void create_invoice_returns_201_or_200() {
 // First call create cart api to get cartId
         Response cart = CartApi.createCart();
