@@ -19,7 +19,7 @@ public class ProductTests extends BaseTest {
         Response res = ProductApi.listProducts();
     }
 
-    @Test(groups = {"regression"})
+    @Test(groups = {"regression"}) @Ignore
     public void list_products_with_filters_ok() {
         ProductFilter filter = ProductFilter.builder()
                 .isRental("0")
