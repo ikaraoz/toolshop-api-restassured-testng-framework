@@ -44,18 +44,31 @@ jobs:
         run: chmod +x gradlew
 
       - name: 🚀 Run API tests
+        id: run_tests
         run: |
-          echo "Running tests for environment: ${{ inputs.env }}"
+          ENV_NAME="${{ inputs.env || 'qa' }}"
+          GROUP_NAME="${{ inputs.groups || 'all' }}"
+          echo "Running tests for environment: $ENV_NAME"
+          echo "Selected group(s): $GROUP_NAME"
+
           GROUP_ARG=""
-          if [ "${{ inputs.groups }}" != "all" ]; then
-            GROUP_ARG="-Dgroups=${{ inputs.groups }}"
+          if [ "$GROUP_NAME" != "all" ]; then
+            GROUP_ARG="-Dgroups=$GROUP_NAME"
           fi
-          ./gradlew clean test $GROUP_ARG -Denv=${{ inputs.env }} || true
+
+          # Run tests and capture exit code
+          set +e
+          ./gradlew clean test $GROUP_ARG -Denv=$ENV_NAME
+          TEST_RESULT=$?
+          echo "test_result=$TEST_RESULT" >> $GITHUB_OUTPUT
+          set -e
 
       - name: 🧾 Generate Allure report
+        if: always()
         run: ./gradlew allureReport --info
 
       - name: 📂 Verify Allure report exists
+        if: always()
         run: |
           echo "Verifying generated Allure report at ${{ env.REPORT_PATH }}"
           ls -R ${{ env.REPORT_PATH }} || (echo "❌ Allure report missing!" && exit 1)
@@ -68,17 +81,28 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ${{ env.REPORT_PATH }}
           force_orphan: true
-          commit_message: "🧾 Publish Allure report for ${{ inputs.env }} - ${{ inputs.groups }}"
+          commit_message: "🧾 Publish Allure report for ${{ inputs.env || 'qa' }} - ${{ inputs.groups || 'all' }}"
 
       - name: 💾 Upload Allure report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-${{ inputs.env }}-${{ inputs.groups }}
+          name: allure-report-${{ inputs.env || 'qa' }}-${{ inputs.groups || 'all' }}
           path: ${{ env.REPORT_PATH }}
           retention-days: 7  # keep for a week
 
+      - name: 🚨 Mark build as failed if tests failed
+        if: always()
+        run: |
+          if [ "${{ steps.run_tests.outputs.test_result }}" != "0" ]; then
+            echo "❌ Some tests failed. Marking workflow as failed."
+            exit 1
+          else
+            echo "✅ All tests passed successfully."
+          fi
+
       - name: 🔗 Log published report URL
+        if: always()
         run: |
           echo "✅ Allure report published successfully!"
           echo "🌐 Access it here:"
