@@ -1,0 +1,53 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Nov 16 03:18:28 UTC 2025","Sun Nov 16 03:18:29 UTC 2025","898","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","delete_brand_by_id_returns_204","delete_brand_by_id_returns_204",""
+"passed","Sun Nov 16 03:18:24 UTC 2025","Sun Nov 16 03:18:24 UTC 2025","493","","Product catalogue","","Validate product list structure","","Validate product list structure","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"passed","Sun Nov 16 03:18:22 UTC 2025","Sun Nov 16 03:18:23 UTC 2025","1487","","Invoice management","","List invoices first page","","List invoices first page","  As an authenticated user
+  I want to review invoices
+  So that I can track my orders"
+"failed","Sun Nov 16 03:18:11 UTC 2025","Sun Nov 16 03:18:14 UTC 2025","3372","","Cart management","","Create a new cart","","Create a new cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sun Nov 16 03:18:27 UTC 2025","Sun Nov 16 03:18:27 UTC 2025","524","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
+"passed","Sun Nov 16 03:18:23 UTC 2025","Sun Nov 16 03:18:24 UTC 2025","508","","Product catalogue","","List products with default parameters","","List products with default parameters","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"passed","Sun Nov 16 03:18:32 UTC 2025","Sun Nov 16 03:18:33 UTC 2025","460","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","create_cart_creates_new_cart","create_cart_creates_new_cart",""
+"passed","Sun Nov 16 03:18:42 UTC 2025","Sun Nov 16 03:18:42 UTC 2025","476","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","list_products_ok_default","list_products_ok_default",""
+"passed","Sun Nov 16 03:18:16 UTC 2025","Sun Nov 16 03:18:17 UTC 2025","868","","Cart management","","Delete cart by id","","Delete cart by id","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sun Nov 16 03:18:31 UTC 2025","Sun Nov 16 03:18:32 UTC 2025","1386","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","addItemToCart_succeeds_whenRequestIsValid","addItemToCart_succeeds_whenRequestIsValid",""
+"passed","Sun Nov 16 03:18:16 UTC 2025","Sun Nov 16 03:18:16 UTC 2025","902","","Cart management","","Retrieve cart by id","","Retrieve cart by id","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sun Nov 16 03:18:26 UTC 2025","Sun Nov 16 03:18:27 UTC 2025","511","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
+"passed","Sun Nov 16 03:18:24 UTC 2025","Sun Nov 16 03:18:26 UTC 2025","1441","","Product catalogue","","Get product details by id","","Get product details by id","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"passed","Sun Nov 16 03:18:17 UTC 2025","Sun Nov 16 03:18:20 UTC 2025","2303","","Cart management","","Update quantity of an item in the cart","","Update quantity of an item in the cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"unknown","Sun Nov 16 03:18:10 UTC 2025","Sun Nov 16 03:18:10 UTC 2025","0","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","list_products_with_filters_ok","list_products_with_filters_ok",""
+"unknown","Sun Nov 16 03:18:10 UTC 2025","Sun Nov 16 03:18:10 UTC 2025","2","Gradle suite","Gradle test","tests.InvoiceTests","tests.InvoiceTests","create_invoice_returns_201_or_200","create_invoice_returns_201_or_200",""
+"passed","Sun Nov 16 03:18:29 UTC 2025","Sun Nov 16 03:18:30 UTC 2025","896","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","get_brand_by_id_ok","get_brand_by_id_ok",""
+"passed","Sun Nov 16 03:18:34 UTC 2025","Sun Nov 16 03:18:36 UTC 2025","2761","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","delete_product_from_cart_removes_product","delete_product_from_cart_removes_product",""
+"passed","Sun Nov 16 03:18:33 UTC 2025","Sun Nov 16 03:18:34 UTC 2025","902","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","delete_cart_by_id_removes_cart","delete_cart_by_id_removes_cart",""
+"passed","Sun Nov 16 03:18:41 UTC 2025","Sun Nov 16 03:18:42 UTC 2025","1004","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","get_product_by_id_ok","get_product_by_id_ok",""
+"passed","Sun Nov 16 03:18:30 UTC 2025","Sun Nov 16 03:18:31 UTC 2025","471","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","store_new_brand_returns_201","store_new_brand_returns_201",""
+"passed","Sun Nov 16 03:18:42 UTC 2025","Sun Nov 16 03:18:43 UTC 2025","510","Gradle suite","Gradle test","tests.UserTests","tests.UserTests","login_returns_token","login_returns_token",""
+"passed","Sun Nov 16 03:18:43 UTC 2025","Sun Nov 16 03:18:43 UTC 2025","602","Gradle suite","Gradle test","tests.UserTests","tests.UserTests","register_creates_user","register_creates_user",""
+"passed","Sun Nov 16 03:18:29 UTC 2025","Sun Nov 16 03:18:29 UTC 2025","443","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","get_all_brands_list_all_brands_with_status_code_200","get_all_brands_list_all_brands_with_status_code_200",""
+"passed","Sun Nov 16 03:18:37 UTC 2025","Sun Nov 16 03:18:40 UTC 2025","2713","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","update_quantity_of_item_updates_cart","update_quantity_of_item_updates_cart",""
+"passed","Sun Nov 16 03:18:20 UTC 2025","Sun Nov 16 03:18:22 UTC 2025","2240","","Cart management","","Remove product from cart","","Remove product from cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"failed","Sun Nov 16 03:18:26 UTC 2025","Sun Nov 16 03:18:26 UTC 2025","527","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
+"passed","Sun Nov 16 03:18:36 UTC 2025","Sun Nov 16 03:18:37 UTC 2025","860","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","get_cart_by_id_returns_specific_cart","get_cart_by_id_returns_specific_cart",""
+"passed","Sun Nov 16 03:18:40 UTC 2025","Sun Nov 16 03:18:41 UTC 2025","725","Gradle suite","Gradle test","tests.InvoiceTests","tests.InvoiceTests","list_invoices_first_page_ok","list_invoices_first_page_ok",""
+"unknown","Sun Nov 16 03:18:10 UTC 2025","Sun Nov 16 03:18:10 UTC 2025","0","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","create_product_returns_201_or_200","create_product_returns_201_or_200",""
+"passed","Sun Nov 16 03:18:27 UTC 2025","Sun Nov 16 03:18:28 UTC 2025","666","","User account flows","","Successful registration creates a user","","Successful registration creates a user",""
+"passed","Sun Nov 16 03:18:14 UTC 2025","Sun Nov 16 03:18:16 UTC 2025","1615","","Cart management","","Add product to cart","","Add product to cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
