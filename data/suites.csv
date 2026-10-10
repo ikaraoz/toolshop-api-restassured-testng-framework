@@ -1,0 +1,53 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"unknown","Sat Oct 10 08:07:53 UTC 2026","Sat Oct 10 08:07:53 UTC 2026","0","Gradle suite","Gradle test","tests.InvoiceTests","tests.InvoiceTests","create_invoice_returns_201_or_200","create_invoice_returns_201_or_200",""
+"passed","Sat Oct 10 08:10:34 UTC 2026","Sat Oct 10 08:10:35 UTC 2026","916","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","get_product_by_id_ok","get_product_by_id_ok",""
+"passed","Sat Oct 10 08:07:56 UTC 2026","Sat Oct 10 08:07:58 UTC 2026","1434","","Cart management","","Add product to cart","","Add product to cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sat Oct 10 08:10:35 UTC 2026","Sat Oct 10 08:10:36 UTC 2026","555","Gradle suite","Gradle test","tests.UserTests","tests.UserTests","login_returns_token","login_returns_token",""
+"passed","Sat Oct 10 08:10:25 UTC 2026","Sat Oct 10 08:10:26 UTC 2026","414","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","create_cart_creates_new_cart","create_cart_creates_new_cart",""
+"failed","Sat Oct 10 08:10:21 UTC 2026","Sat Oct 10 08:10:22 UTC 2026","423","","User account flows","","Successful registration creates a user","","Successful registration creates a user",""
+"passed","Sat Oct 10 08:10:22 UTC 2026","Sat Oct 10 08:10:23 UTC 2026","405","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","get_all_brands_list_all_brands_with_status_code_200","get_all_brands_list_all_brands_with_status_code_200",""
+"passed","Sat Oct 10 08:10:18 UTC 2026","Sat Oct 10 08:10:18 UTC 2026","453","","Product catalogue","","Validate product list structure","","Validate product list structure","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"unknown","Sat Oct 10 08:07:53 UTC 2026","Sat Oct 10 08:07:53 UTC 2026","0","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","list_products_with_filters_ok","list_products_with_filters_ok",""
+"failed","Sat Oct 10 08:10:15 UTC 2026","Sat Oct 10 08:10:17 UTC 2026","1731","","Invoice management","","List invoices first page","","List invoices first page","  As an authenticated user
+  I want to review invoices
+  So that I can track my orders"
+"passed","Sat Oct 10 08:10:26 UTC 2026","Sat Oct 10 08:10:27 UTC 2026","855","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","delete_cart_by_id_removes_cart","delete_cart_by_id_removes_cart",""
+"passed","Sat Oct 10 08:10:17 UTC 2026","Sat Oct 10 08:10:18 UTC 2026","1295","","Product catalogue","","List products with default parameters","","List products with default parameters","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"passed","Sat Oct 10 08:07:58 UTC 2026","Sat Oct 10 08:07:58 UTC 2026","793","","Cart management","","Retrieve cart by id","","Retrieve cart by id","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"failed","Sat Oct 10 08:07:54 UTC 2026","Sat Oct 10 08:07:56 UTC 2026","2266","","Cart management","","Create a new cart","","Create a new cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"failed","Sat Oct 10 08:10:20 UTC 2026","Sat Oct 10 08:10:21 UTC 2026","412","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
+"passed","Sat Oct 10 08:10:24 UTC 2026","Sat Oct 10 08:10:24 UTC 2026","429","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","store_new_brand_returns_201","store_new_brand_returns_201",""
+"failed","Sat Oct 10 08:10:20 UTC 2026","Sat Oct 10 08:10:20 UTC 2026","430","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
+"passed","Sat Oct 10 08:07:58 UTC 2026","Sat Oct 10 08:07:59 UTC 2026","838","","Cart management","","Delete cart by id","","Delete cart by id","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sat Oct 10 08:10:23 UTC 2026","Sat Oct 10 08:10:24 UTC 2026","862","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","get_brand_by_id_ok","get_brand_by_id_ok",""
+"passed","Sat Oct 10 08:10:30 UTC 2026","Sat Oct 10 08:10:33 UTC 2026","2539","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","update_quantity_of_item_updates_cart","update_quantity_of_item_updates_cart",""
+"passed","Sat Oct 10 08:10:18 UTC 2026","Sat Oct 10 08:10:20 UTC 2026","1462","","Product catalogue","","Get product details by id","","Get product details by id","  As a store visitor
+  I want to browse the product catalogue
+  So that I can discover items to purchase"
+"failed","Sat Oct 10 08:08:01 UTC 2026","Sat Oct 10 08:10:15 UTC 2026","133499","","Cart management","","Remove product from cart","","Remove product from cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sat Oct 10 08:10:27 UTC 2026","Sat Oct 10 08:10:29 UTC 2026","2544","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","delete_product_from_cart_removes_product","delete_product_from_cart_removes_product",""
+"passed","Sat Oct 10 08:10:36 UTC 2026","Sat Oct 10 08:10:36 UTC 2026","778","Gradle suite","Gradle test","tests.UserTests","tests.UserTests","register_creates_user","register_creates_user",""
+"unknown","Sat Oct 10 08:07:53 UTC 2026","Sat Oct 10 08:07:53 UTC 2026","1","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","create_product_returns_201_or_200","create_product_returns_201_or_200",""
+"passed","Sat Oct 10 08:07:59 UTC 2026","Sat Oct 10 08:08:01 UTC 2026","2211","","Cart management","","Update quantity of an item in the cart","","Update quantity of an item in the cart","  As a shopper
+  I want to manage items in my cart
+  So that I can complete purchases"
+"passed","Sat Oct 10 08:10:24 UTC 2026","Sat Oct 10 08:10:25 UTC 2026","1291","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","addItemToCart_succeeds_whenRequestIsValid","addItemToCart_succeeds_whenRequestIsValid",""
+"passed","Sat Oct 10 08:10:33 UTC 2026","Sat Oct 10 08:10:34 UTC 2026","1206","Gradle suite","Gradle test","tests.InvoiceTests","tests.InvoiceTests","list_invoices_first_page_ok","list_invoices_first_page_ok",""
+"failed","Sat Oct 10 08:10:22 UTC 2026","Sat Oct 10 08:10:22 UTC 2026","809","Gradle suite","Gradle test","tests.BrandTests","tests.BrandTests","delete_brand_by_id_returns_204","delete_brand_by_id_returns_204",""
+"passed","Sat Oct 10 08:10:35 UTC 2026","Sat Oct 10 08:10:35 UTC 2026","454","Gradle suite","Gradle test","tests.ProductTests","tests.ProductTests","list_products_ok_default","list_products_ok_default",""
+"passed","Sat Oct 10 08:10:29 UTC 2026","Sat Oct 10 08:10:30 UTC 2026","837","Gradle suite","Gradle test","tests.CartTests","tests.CartTests","get_cart_by_id_returns_specific_cart","get_cart_by_id_returns_specific_cart",""
+"failed","Sat Oct 10 08:10:21 UTC 2026","Sat Oct 10 08:10:21 UTC 2026","406","","User account flows","","Successful login returns an access token","","Successful login returns an access token",""
